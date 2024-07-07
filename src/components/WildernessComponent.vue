@@ -15,6 +15,9 @@
             </v-col>
         </v-row>
         <v-row v-else class="justify-space-around">
+            <v-col cols="12" class="text-center">
+                <v-btn text @click="selectedLocation = null" color="red">Leave</v-btn>
+            </v-col>
             <v-col cols="2" v-for="resource in selectedLocation.resources" :key="resource">
                 <v-card>
                     <v-card-title>{{ resources.find(x => x.id == resource).name }}</v-card-title>
@@ -23,6 +26,17 @@
                     </v-card-text>
                     <v-card-actions>
                         <v-btn @click="gatherResource(resource)">Gather</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-col>
+            <v-col cols="2">
+                <v-card>
+                    <v-card-title>Hunt Monsters</v-card-title>
+                    <v-card-text>
+                        <v-img class="location-image" :src="require(`@/assets/icons/hunt.png`)" />
+                    </v-card-text>
+                    <v-card-actions>
+                        <v-btn @click="gatherResource(resource)">Hunt</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-col>

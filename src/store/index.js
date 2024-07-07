@@ -7,6 +7,8 @@ export default new Vuex.Store({
   state: {
     playerInventory: [],
     baseMonsters: [],
+    seenMonsters: [],
+    capturedMonsters: [],
     playerMonsters: [],
     playerMonstersTeam: [],
   },

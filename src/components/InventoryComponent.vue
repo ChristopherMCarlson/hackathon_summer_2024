@@ -1,15 +1,20 @@
 <template>
     <v-container>
-    <v-row>
-        <v-col cols="1" v-for="item in playerInventory" :key="item.id">
-            <v-card>
-                <v-card-title>{{ resources.find(x => x.id == item.id).name }}</v-card-title>
-                <v-card-subtitle>{{ item.quantity }}</v-card-subtitle>
-                <v-img :src="require(`@/assets/resources/${convertToCamelCase(resources.find(x => x.id == item.id).name)}.png`)" />
-                <v-btn color="error" text>Drop</v-btn>
-            </v-card>
-        </v-col>
-    </v-row>
+        <v-row v-if="playerInventory.length > 0">
+            <v-col cols="1" v-for="item in playerInventory" :key="item.id">
+                <v-card>
+                    <v-card-title>{{ resources.find(x => x.id == item.id).name }}</v-card-title>
+                    <v-card-subtitle>{{ item.quantity }}</v-card-subtitle>
+                    <v-img :src="require(`@/assets/resources/${convertToCamelCase(resources.find(x => x.id == item.id).name)}.png`)" />
+                    <v-btn color="error" text>Drop</v-btn>
+                </v-card>
+            </v-col>
+        </v-row>
+        <v-row v-else>
+            <v-col cols="12" class="text-center mt-5">
+                <h1>Your inventory is empty.</h1>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 

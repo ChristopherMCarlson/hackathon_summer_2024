@@ -36,8 +36,7 @@
         },
         computed: {
             playerInventory() {
-                console.log(this.$store.state.playerInventory)
-                return this.$store.state.playerInventory;
+                return this.$store.state.playerResourceInventory.concat(this.$store.state.playerItemInventory);
             }
         }
     }

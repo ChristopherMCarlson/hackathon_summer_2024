@@ -8,7 +8,8 @@
                 "name": "Wood",
                 "quantity": 10
             }
-        ]
+        ],
+        "craftableItems": [0, 1, 2]
     },
     {
         "name": "Furnace",
@@ -33,13 +34,161 @@
         ]
     },
     {
-        "name": "Farm",
-        "description": "A farm is used to allow monsters to produce resources.",
-        "image": "farm.png",
+        "name": "Berry Farm",
+        "description": "A farm that produces berries.",
+        "image": "berryFarm.png",
         "resources": [
             {
                 "name": "Wood",
                 "quantity": 50
+            },
+            {
+                "name": "Berries",
+                "quantity": 100
+            }
+        ]
+    },
+    {
+        "name": "Stone Quarry",
+        "description": "A stone quarry is used to allow monsters to produce stone.",
+        "image": "stoneQuarry.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 50
+            },
+            {
+                "name": "Stone",
+                "quantity": 100
+            }
+        ]
+    },
+    {
+        "name": "Logging Site",
+        "description": "A logging site is used to allow monsters to produce wood.",
+        "image": "loggingSite.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 200
+            },
+            {
+                "name": "Stone",
+                "quantity": 50
+            }
+        ]
+    },
+    {
+        "name": "Ore Mine",
+        "description": "An ore mine is used to allow monsters to produce ore.",
+        "image": "oreMine.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 50
+            },
+            {
+                "name": "Stone",
+                "quantity": 100
+            },
+            {
+                "name": "Ore",
+                "quantity": 100
+            }
+        ]
+    },
+    {
+        "name": "Coal Mine",
+        "description": "A coal mine is used to allow monsters to produce coal.",
+        "image": "coalMine.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 50
+            },
+            {
+                "name": "Stone",
+                "quantity": 100
+            },
+            {
+                "name": "Coal",
+                "quantity": 100
+            }
+        ]
+    },
+    {
+        "name": "Crystal Mine",
+        "description": "A crystal mine is used to allow monsters to produce crystal.",
+        "image": "crystalMine.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 50
+            },
+            {
+                "name": "Stone",
+                "quantity": 100
+            },
+            {
+                "name": "Crystal",
+                "quantity": 100
+            }
+        ]
+    },
+    {
+        "name": "Medicine Bench",
+        "description": "A medicine bench is used to craft medicine.",
+        "image": "medicineBench.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 50
+            },
+            {
+                "name": "Stone",
+                "quantity": 50
+            },
+            {
+                "name": "Berries",
+                "quantity": 50
+            }
+        ]
+    },
+    {
+        "name": "Forge",
+        "description": "A forge is used to more efficiently smelt ore.",
+        "image": "forge.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 50
+            },
+            {
+                "name": "Stone",
+                "quantity": 300
+            },
+            {
+                "name": "Iron",
+                "quantity": 50
+            }
+        ]
+    },
+    {
+        "name": "Conduit Bench",
+        "description": "A conduit bench is used to craft conduits.",
+        "image": "conduitBench.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 200
+            },
+            {
+                "name": "Stone",
+                "quantity": 50
+            },
+            {
+                "name": "Crystal",
+                "quantity": 200
             }
         ]
     }

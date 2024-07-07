@@ -5,30 +5,38 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    playerInventory: [],
+    playerResourceInventory: [],
+    playerItemInventory: [],
     baseMonsters: [],
     seenMonsters: [],
     capturedMonsters: [],
     playerMonsters: [],
     playerMonstersTeam: [],
+    tutorialObjectives: [
+      "Chop down trees for wood in the peaceful woods",
+      "Build a workbench to craft items in your base",
+      "Mine for crystal in the peaceful woods",
+      "Craft a conduit to capture monsters on a workbench",
+      "Capture a monster in the peaceful woods",
+    ],
   },
   getters: {
   },
   mutations: {
-    addItemToInventory(state, item) {
-      if(state.playerInventory.find(i => i.id === item.id)) {
-        state.playerInventory.find(i => i.id === item.id).quantity++;
+    addResourceToInventory(state, item) {
+      if(state.playerResourceInventory.find(i => i.id === item.id)) {
+        state.playerResourceInventory.find(i => i.id === item.id).quantity++;
         console.log('Item quantity increased');
       } else {
-        state.playerInventory.push(item);
-        console.log(state.playerInventory);
+        state.playerResourceInventory.push(item);
+        console.log(state.playerResourceInventory);
       }
     }
   },
   actions: {
     // Add item to player inventory
-    addItemToInventory(store, item) {
-      store.commit('addItemToInventory', item);
+    addResourceToInventory(store, item) {
+      store.commit('addResourceToInventory', item);
     },
   },
   modules: {

@@ -10,5 +10,29 @@
     {
         "id": 2,
         "name": "Berries"
+    },
+    {
+        "id": 3,
+        "name": "Ore"
+    },
+    {
+        "id": 4,
+        "name": "Coal"
+    },
+    {
+        "id": 5,
+        "name": "Crystal"
+    },
+    {
+        "id": 6,
+        "name": "Ice"
+    },
+    {
+        "id": 7,
+        "name": "Coal"
+    },
+    {
+        "id": 8,
+        "name": "Sulfur"
     }
 ]

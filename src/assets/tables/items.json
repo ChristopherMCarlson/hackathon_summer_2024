@@ -1,0 +1,138 @@
+[
+    {
+        "id": 0,
+        "name": "Pickaxe",
+        "requiredResources": [
+            {
+                "name": "Wood",
+                "quantity": 10
+            },
+            {
+                "name": "Stone",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Axe",
+        "requiredResources": [
+            {
+                "name": "Wood",
+                "quantity": 5
+            },
+            {
+                "name": "Stone",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Blue Conduit",
+        "requiredResources": [
+            {
+                "name": "Stone",
+                "quantity": 5
+            },
+            {
+                "name": "Crystal",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Red Conduit",
+        "requiredResources": [
+            {
+                "name": "Stone",
+                "quantity": 20
+            },
+            {
+                "name": "Crystal",
+                "quantity": 30
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Yellow Conduit",
+        "requiredResources": [
+            {
+                "name": "Iron",
+                "quantity": 20
+            },
+            {
+                "name": "Crystal",
+                "quantity": 100
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Iron",
+        "requiredResources": [
+            {
+                "name": "Ore",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Steel",
+        "requiredResources": [
+            {
+                "name": "Ore",
+                "quantity": 2
+            },
+            {
+                "name": "Coal",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Red Medicine",
+        "requiredResources": [
+            {
+                "name": "Berries",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Blue Medicine",
+        "requiredResources": [
+            {
+                "name": "Berries",
+                "quantity": 10
+            },
+            {
+                "name": "Crystal",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Yellow Medicine",
+        "requiredResources": [
+            {
+                "name": "Berries",
+                "quantity": 50
+            },
+            {
+                "name": "Crystal",
+                "quantity": 15
+            },
+            {
+                "name": "Sulfur",
+                "quantity": 5
+            }
+        ]
+    }
+]

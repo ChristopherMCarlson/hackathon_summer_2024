@@ -20,7 +20,7 @@
             </v-col>
             <v-col cols="2" v-for="resource in selectedLocation.resources" :key="resource">
                 <v-card>
-                    <v-card-title>{{ resources.find(x => x.id == resource).name }}</v-card-title>
+                    <v-card-title>Gather {{ resources.find(x => x.id == resource).name }}</v-card-title>
                     <v-card-text>
                         <v-img class="location-image" :src="require(`@/assets/resources/${convertToCamelCase(resources.find(x => x.id == resource).name)}.png`)" />
                     </v-card-text>
@@ -94,25 +94,34 @@
                 }).join('')
             },
             gatherResource(resource) {
-                // 10% chance to enter huntMonsters function
-                if (Math.random() < 0.1) {
-                    this.huntMonsters();
-                    return;
+                //check if the player has either a conduit or a monster
+                if(this.playerItemInventory.find(x => x.id == 2) || this.playerMonsterTeam > 0) {
+                    // 10% chance to enter huntMonsters function
+                    if (Math.random() < 0.1) {
+                        this.huntMonsters();
+                        return;
+                    }
                 }
                 //check if resource is stone
                 if (resource == 1) {
                     //check if player has pickaxe
-                    if (!this.playerInventory.find(x => x.id == 67)) {
+                    if (!this.playerItemInventory.find(x => x.id == 0)) {
                         this.stoneCount++;
                         if(this.stoneCount == 3) {
                             //add stone to inventory
-                            this.$store.commit('addItemToInventory', { id: 1, quantity: 1 })
+                            this.$store.commit('addResourceToInventory', { id: 1, quantity: 1 })
                             this.text = `You gathered ${this.resources.find(x => x.id == resource).name} but you need a pickaxe to gather more efficiently.`
                             this.snackbar = true
                             this.stoneCount = 0;
                             return;
                         }
                     }
+                }
+                if(resource == 0) {
+                    //add wood to inventory
+                    this.$store.commit('addResourceToInventory', { id: 0, quantity: 1 });
+                    this.text = `You gathered ${this.resources.find(x => x.id == resource).name} but you need an axe to gather more efficiently.`
+                    this.snackbar = true
                 }
             },
             huntMonsters(){
@@ -126,8 +135,11 @@
             }
         },
         computed: {
-            playerInventory() {
-                return this.$store.state.playerInventory
+            playerItemInventory() {
+                return this.$store.state.playerItemInventory
+            },
+            playerMonsterTeam() {
+                return this.$store.state.playerMonsterTeam
             }
         }
     }

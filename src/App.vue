@@ -19,6 +19,17 @@
           <v-list-item-title>{{ component.label }}</v-list-item-title>
         </v-list-item>
       </v-list>
+      <v-list class="mt-5">
+        <v-list-item>
+          <p style="color: #00FFFF">OBJECTIVES:</p>
+        </v-list-item>
+        <v-list-item
+          v-for="tutorial in tutorialObjetives"
+          :key="tutorial"
+        >
+          <p style="color: #00FFFF">{{ tutorial }}</p>
+        </v-list-item>
+      </v-list>
     </v-navigation-drawer>
 
     <v-app-bar app>
@@ -73,6 +84,11 @@
           },
         ]
       }),
+      computed: {
+        tutorialObjetives(){
+          return this.$store.state.tutorialObjectives;
+        }
+      }
   }
 </script>
 

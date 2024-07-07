@@ -31,5 +31,16 @@
                 "quantity": 10
             }
         ]
+    },
+    {
+        "name": "Farm",
+        "description": "A farm is used to allow monsters to produce resources.",
+        "image": "farm.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 50
+            }
+        ]
     }
 ]

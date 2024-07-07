@@ -1,10 +1,10 @@
 <template>
     <v-container>
-        <v-row v-if="selectedLocation == null" class="justify-space-around">
+        <v-row v-if="selectedLocation == null && activeMonster == null" class="justify-space-around">
             <v-col cols="2" v-for="location in locations" :key="location.name">
                 <v-card>
                     <v-card-title>{{ location.name }}</v-card-title>
-                    <v-card-subtitle>Recommended Level: {{ location.level }}</v-card-subtitle>
+                    <v-card-subtitle>Recommended Level: {{ location.minLevel }} - {{ location.maxLevel }}</v-card-subtitle>
                     <v-card-text>
                         <v-img class="location-image" :src="require(`@/assets/locations/${convertToCamelCase(location.name)}.png`)" />
                     </v-card-text>
@@ -14,7 +14,7 @@
                 </v-card>
             </v-col>
         </v-row>
-        <v-row v-else class="justify-space-around">
+        <v-row v-if="selectedLocation != null && activeMonster == null" class="justify-space-around">
             <v-col cols="12" class="text-center">
                 <v-btn text @click="selectedLocation = null" color="red">Leave</v-btn>
             </v-col>
@@ -41,6 +41,9 @@
                 </v-card>
             </v-col>
         </v-row>
+        <v-row v-if="selectedLocation != null && activeMonster != null">
+            <BattleComponent :monster="activeMonster" />
+        </v-row>
         <v-snackbar
             v-model="snackbar"
             :timeout="timeout"
@@ -64,10 +67,15 @@
 <script>
     import locationsData from "@/assets/tables/locations.json";
     import resourceData from "@/assets/tables/resources.json";
-    import monstersData from "@/assets/tables/monsters.json"
+    import monstersData from "@/assets/tables/monsters.json";
+    import BattleComponent from './BattleComponent.vue' // eslint-disable-line
+
 
     export default {
         name: 'WildernessComponent',
+        components: {
+            BattleComponent
+        },
         data: () => ({
             locations: locationsData,
             resources: resourceData,
@@ -75,7 +83,8 @@
             snackbar: false,
             text: '',
             timeout: 2000,
-            stoneCount: 0
+            stoneCount: 0,
+            activeMonster: null,
         }),
         methods: {
             convertToCamelCase(str) {
@@ -109,9 +118,11 @@
             huntMonsters(){
                 //select a random monster from the available encounters in a location
                 const randomMonsterIndex = Math.floor(Math.random() * this.selectedLocation.encounters.length);
-                const randomMonster = monstersData.find(x => x.id == this.selectedLocation.encounters[randomMonsterIndex]);
+                let randomMonster = monstersData.find(x => x.id == this.selectedLocation.encounters[randomMonsterIndex]);
+                //create a level for the monster based on location level range
+                randomMonster.level = Math.floor(Math.random() * (this.selectedLocation.maxLevel - this.selectedLocation.minLevel + 1)) + this.selectedLocation.minLevel;
                 // Use the randomMonster for further processing
-                console.log(randomMonster);
+                this.activeMonster = randomMonster;
             }
         },
         computed: {

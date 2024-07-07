@@ -1,42 +1,48 @@
 [
     {
         "name": "Peaceful Woods",
-        "level": "1-10",
+        "minLevel": 1,
+        "maxLevel": 10,
         "encounters": [0, 4, 6, 9, 12, 12, 16, 17, 19, 24],
         "resources": [0, 1, 2],
         "rareEncounters": []
     },
     {
         "name": "Dark Forest",
-        "level": "5-20",
+        "minLevel": 5,
+        "maxLevel": 20,
         "encounters": [1, 5, 7, 10, 13, 13, 18, 20, 22, 25],
         "resources": [3, 4, 5],
         "rareEncounters": []
     },
     {
         "name": "Mystic Sands",
-        "level": "18-30",
+        "minLevel": 18,
+        "maxLevel": 30,
         "encounters": [1, 5, 7, 10, 13, 13, 18, 20, 22, 25],
         "resources": [3, 4, 5],
         "rareEncounters": []
     },
     {
         "name": "Frozen Tundra",
-        "level": "25-45",
+        "minLevel": 25,
+        "maxLevel": 45,
         "encounters": [2, 6, 8, 11, 14, 14, 19, 21, 23, 26],
         "resources": [6, 7, 8],
         "rareEncounters": []
     },
     {
         "name": "Volcanic Wastes",
-        "level": "40-70",
+        "minLevel": 40,
+        "maxLevel": 70,
         "encounters": [2, 6, 8, 11, 14, 14, 19, 21, 23, 26],
         "resources": [6, 7, 8],
         "rareEncounters": []
     },
     {
         "name": "Challenge Mountains",
-        "level": "100",
+        "minLevel": 100,
+        "maxLevel": 100,
         "encounters": [1, 5, 7, 10, 13, 13, 18, 20, 22, 25],
         "resources": [3, 4, 5],
         "rareEncounters": []

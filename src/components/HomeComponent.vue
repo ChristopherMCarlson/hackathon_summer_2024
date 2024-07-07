@@ -13,10 +13,10 @@
             <v-tab-item value="manage-base">
                 <!-- Content for Manage Base tab -->
                 <v-row>
-                    <v-col cols="3" v-for="tech in techData" :key="tech.name">
-                        <v-card dark>
+                    <v-col cols="4" v-for="tech in techData" :key="tech.name">
+                        <v-card dark height="100%">
                             <div class="d-flex flex-no-wrap justify-space-between">
-                            <div>
+                            <div class="">
                                 <v-card-title
                                 class="text-h5"
                                 > {{ tech.name }}</v-card-title>
@@ -25,8 +25,17 @@
                                 <v-card-text>Requires:</v-card-text>
                                 <v-card-text v-for="resource in tech.resources" :key="resource.name">{{ resource.name }} - {{ resource.quantity }}</v-card-text>
         
+                            </div>
+                            <div>
+                                <v-avatar
+                                class="ma-3"
+                                size="125"
+                                tile
+                                >
+                                    <v-img :src="require(`@/assets/tech/${tech.image}`)"></v-img>
+                                </v-avatar>
                                 <v-card-actions>
-        
+
                                 <v-btn
                                     class="ml-2 mt-5"
                                     outlined
@@ -37,14 +46,6 @@
                                 </v-btn>
                                 </v-card-actions>
                             </div>
-        
-                            <v-avatar
-                                class="ma-3"
-                                size="125"
-                                tile
-                            >
-                                <v-img :src="require(`@/assets/tech/${tech.image}`)"></v-img>
-                            </v-avatar>
                             </div>
                         </v-card>
                     </v-col>
@@ -66,6 +67,11 @@
                 tab: 'manage-base',
                 techData: techData,
                 managingBase: false,
+            }
+        },
+        computed: {
+            playerInventory() {
+                return this.$store.state.playerResourceInventory.concat(this.$store.state.playerItemInventory);
             }
         }
     }

@@ -25,14 +25,10 @@
     },
     {
         "id": 6,
-        "name": "Ice"
-    },
-    {
-        "id": 7,
         "name": "Coal"
     },
     {
-        "id": 8,
+        "id": 7,
         "name": "Sulfur"
     }
 ]

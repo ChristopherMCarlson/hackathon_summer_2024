@@ -1,4 +1,5 @@
 <template>
+    <v-container>
     <v-row>
         <v-col cols="1">
             <v-card>
@@ -49,6 +50,7 @@
             </v-card>
         </v-col>
     </v-row>
+    </v-container>
 </template>
 
 <script>

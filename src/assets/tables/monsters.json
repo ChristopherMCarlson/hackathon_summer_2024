@@ -1,98 +1,482 @@
 [
     {
-        "name": "Goblin",
-        "health": 10,
-        "attack": 5,
-        "defense": 2,
-        "speed": 3,
-        "experience": 10
+       "name": "Abang",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Orc",
-        "health": 20,
-        "attack": 10,
-        "defense": 5,
-        "speed": 5,
-        "experience": 20
+       "name": "Ahimui",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Troll",
-        "health": 30,
-        "attack": 15,
-        "defense": 10,
-        "speed": 2,
-        "experience": 30
+       "name": "Ahinx",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Dragon",
-        "health": 50,
-        "attack": 20,
-        "defense": 15,
-        "speed": 10,
-        "experience": 50
+       "name": "Akelpie",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Demon",
-        "health": 100,
-        "attack": 30,
-        "defense": 20,
-        "speed": 15,
-        "experience": 100
+       "name": "Anaque",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "God",
-        "health": 1000,
-        "attack": 100,
-        "defense": 100,
-        "speed": 100,
-        "experience": 1000
+       "name": "Andere",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Goblin King",
-        "health": 100,
-        "attack": 50,
-        "defense": 20,
-        "speed": 30,
-        "experience": 100
+       "name": "Anderishy",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Orc King",
-        "health": 200,
-        "attack": 100,
-        "defense": 50,
-        "speed": 50,
-        "experience": 200
+       "name": "Anishy",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Troll King",
-        "health": 300,
-        "attack": 150,
-        "defense": 100,
-        "speed": 20,
-        "experience": 300
+       "name": "Anost",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Dragon King",
-        "health": 500,
-        "attack": 200,
-        "defense": 150,
-        "speed": 100,
-        "experience": 500
+       "name": "Appalinnu",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "Demon King",
-        "health": 1000,
-        "attack": 300,
-        "defense": 200,
-        "speed": 150,
-        "experience": 1000
+       "name": "Aqrak",
+       "attack": 1,
+       "element": "fire"
     },
     {
-        "name": "God King",
-        "health": 10000,
-        "attack": 1000,
-        "defense": 1000,
-        "speed": 1000,
-        "experience": 10000
+       "name": "Aranalikun",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Arimune",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Azotl",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Bakawa",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Bakeluk",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Baken",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Bakuran",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Bematendes",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Boron",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Cariffin",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Cateshy",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Chaku",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Chimere",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Chishangie",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "cyclops",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Diwangue",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Duldra",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Engiee",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Enguarinn",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Garootl",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Ghoperan",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Grinng",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Grokishi",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Groncang",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Heird",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Heirdal",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Heirdes",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Huitzotl",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Hullavee",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Hupadze",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Iticolhiri",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Jianiffinn",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Jimelpie",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Jimereas",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Jimuna",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Jingshi",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kalkoronok",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kalotsiri",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kalotsusit",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kartslavee",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kasaruda",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Keles",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kelpinx",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kengshing",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kiecabun",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kielpinn",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kijiang",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kisphil",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kithulue",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kitiyamane",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Kunyipere",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Lahinx",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Lamuieires",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Leshi",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Leshyampa",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Lorochis",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Makasque",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Malavee",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Manguarog",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Manshy",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Mapin",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Mateshi",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Matormui",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Mazupire",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Mokappa",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Nakalavee",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Namantaras",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Pukwuda",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Qilinates",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Quelukwuda",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Queshi",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Quetzus",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Selpie",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Tadorokal",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Tadze",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Tarasil",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Tarisie",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Tesheires",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Thecan",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Thullinx",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Thupishee",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Tikie",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Yackasus",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Yamang",
+       "attack": 1,
+       "element": "fire"
+    },
+    {
+       "name": "Yangdra",
+       "attack": 1,
+       "element": "fire"
     }
 ]

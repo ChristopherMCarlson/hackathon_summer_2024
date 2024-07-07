@@ -14,7 +14,7 @@
           @click="activeComponent = component"
         >
           <v-list-item-icon>
-            <v-icon>{{ component.icon }}</v-icon>
+            <v-img :src="require(`@/assets/icons/${component.icon}.png`)" class="icons"></v-img>
           </v-list-item-icon>
           <v-list-item-title>{{ component.label }}</v-list-item-title>
         </v-list-item>
@@ -33,7 +33,6 @@
 
 <script>
   import Home from './components/HomeComponent.vue' // eslint-disable-line
-  import Skills from './components/SkillsComponent.vue' // eslint-disable-line
   import ActiveTeam from './components/ActiveTeamComponent.vue' // eslint-disable-line
   import Wilderness from './components/WildernessComponent.vue' // eslint-disable-line
   import Encyclopedia from './components/EncyclopediaComponent.vue' // eslint-disable-line
@@ -42,39 +41,34 @@
     data: () => ({
       drawer: true,
       activeComponent: {
-          label: 'Home',
-          icon: 'mdi-home',
+          label: 'Base',
+          icon: 'base',
           component: Home,
         },
         components: [
           {
-            label: 'Home',
-            icon: 'mdi-home',
+            label: 'Base',
+            icon: 'base',
             component: Home,
           },
           {
             label: 'Inventory',
-            icon: 'mdi-package-variant-closed',
+            icon: 'inventory',
             component: Inventory,
           },
           {
-            label: 'Skills',
-            icon: 'mdi-account-group',
-            component: Skills,
-          },
-          {
             label: 'Active Team',
-            icon: 'mdi-account-group',
+            icon: 'team',
             component: ActiveTeam,
           },
           {
             label: 'Wilderness',
-            icon: 'mdi-forest-outline',
+            icon: 'wilderness',
             component: Wilderness,
           },
           {
             label: 'Encyclopedia',
-            icon: 'mdi-book-outline',
+            icon: 'encyclopedia',
             component: Encyclopedia,
           },
         ]
@@ -92,5 +86,10 @@
     font-family: 'Karmatic Arcade', sans-serif;
     color: #00FFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .icons {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 </style>

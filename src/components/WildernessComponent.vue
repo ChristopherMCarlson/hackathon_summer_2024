@@ -60,6 +60,7 @@
             snackbar: false,
             text: '',
             timeout: 2000,
+            stoneCount: 0
         }),
         methods: {
             convertToCamelCase(str) {
@@ -69,13 +70,26 @@
                 }).join('')
             },
             gatherResource(resource) {
-                this.text = `You gathered ${this.resources.find(x => x.id == resource).name}`
-                this.snackbar = true
+                //check if resource is stone
+                if (resource == 1) {
+                    //check if player has pickaxe
+                    if (!this.playerInventory.find(x => x.id == 67)) {
+                        this.stoneCount++;
+                        if(this.stoneCount == 3) {
+                            //add stone to inventory
+                            this.$store.commit('addItemToInventory', { id: 1, quantity: 1 })
+                            this.text = `You gathered ${this.resources.find(x => x.id == resource).name} but you need a pickaxe to gather more efficiently.`
+                            this.snackbar = true
+                            this.stoneCount = 0;
+                            return;
+                        }
+                    }
+                }
             }
         },
         computed: {
             playerInventory() {
-                return this.$store.state.player.inventory
+                return this.$store.state.playerInventory
             }
         }
     }

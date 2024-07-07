@@ -1,20 +1,12 @@
 <template>
     <v-container>
     <v-row>
-        <v-col cols="1" v-for="i in 20" :key="i">
+        <v-col cols="1" v-for="item in playerInventory" :key="item.id">
             <v-card>
-                <v-card-title>Item {{ i }}</v-card-title>
-                <v-card-text>
-                    <v-row>
-                        <v-col cols="12">
-                            <v-img src="https://via.placeholder.com/100" />
-                        </v-col>
-                        <v-col cols="12">
-                            <v-btn color="primary">Use</v-btn>
-                            <v-btn color="error">Drop</v-btn>
-                        </v-col>
-                    </v-row>
-                </v-card-text>
+                <v-card-title>{{ resources.find(x => x.id == item.id).name }}</v-card-title>
+                <v-card-subtitle>{{ item.quantity }}</v-card-subtitle>
+                <v-img :src="require(`@/assets/resources/${convertToCamelCase(resources.find(x => x.id == item.id).name)}.png`)" />
+                <v-btn color="error" text>Drop</v-btn>
             </v-card>
         </v-col>
     </v-row>
@@ -22,8 +14,27 @@
 </template>
 
 <script>
+    import resourcesData from "@/assets/tables/resources.json";
+
     export default {
         name: 'InventoryComponent',
+        data: () => ({
+            resources: resourcesData,
+        }),
+        methods: {
+            convertToCamelCase(str) {
+                return str.split(/[^a-zA-Z0-9]/g).map((x, index) => {
+                    if (index === 0) return x.toLowerCase()
+                    return x.substr(0, 1).toUpperCase() + x.substr(1).toLowerCase()
+                }).join('')
+            },
+        },
+        computed: {
+            playerInventory() {
+                console.log(this.$store.state.playerInventory)
+                return this.$store.state.playerInventory;
+            }
+        }
     }
 </script>
 

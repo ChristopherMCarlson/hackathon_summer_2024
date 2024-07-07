@@ -22,11 +22,28 @@
                         <v-img class="location-image" :src="require(`@/assets/resources/${convertToCamelCase(resources.find(x => x.id == resource).name)}.png`)" />
                     </v-card-text>
                     <v-card-actions>
-                        <v-btn>Gather</v-btn>
+                        <v-btn @click="gatherResource(resource)">Gather</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-col>
         </v-row>
+        <v-snackbar
+            v-model="snackbar"
+            :timeout="timeout"
+            >
+            {{ text }}
+
+            <template v-slot:action="{ attrs }">
+                <v-btn
+                color="blue"
+                text
+                v-bind="attrs"
+                @click="snackbar = false"
+                >
+                Close
+                </v-btn>
+            </template>
+        </v-snackbar>
     </v-container>
 </template>
 
@@ -40,6 +57,9 @@
             locations: locationsData,
             resources: resourceData,
             selectedLocation: null,
+            snackbar: false,
+            text: '',
+            timeout: 2000,
         }),
         methods: {
             convertToCamelCase(str) {
@@ -47,6 +67,15 @@
                     if (index === 0) return x.toLowerCase()
                     return x.substr(0, 1).toUpperCase() + x.substr(1).toLowerCase()
                 }).join('')
+            },
+            gatherResource(resource) {
+                this.text = `You gathered ${this.resources.find(x => x.id == resource).name}`
+                this.snackbar = true
+            }
+        },
+        computed: {
+            playerInventory() {
+                return this.$store.state.player.inventory
             }
         }
     }

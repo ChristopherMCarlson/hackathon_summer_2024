@@ -1,482 +1,578 @@
 [
     {
-       "name": "Abang",
-       "attack": 1,
-       "element": "fire"
+        "id": 0,
+        "name": "Abang",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Ahimui",
-       "attack": 1,
-       "element": "fire"
+        "id": 1,
+        "name": "Ahimui",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Ahinx",
-       "attack": 1,
-       "element": "fire"
+        "id": 2,
+        "name": "Ahinx",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Akelpie",
-       "attack": 1,
-       "element": "fire"
+        "id": 3,
+        "name": "Akelpie",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Anaque",
-       "attack": 1,
-       "element": "fire"
+        "id": 4,
+        "name": "Anaque",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Andere",
-       "attack": 1,
-       "element": "fire"
+        "id": 5,
+        "name": "Andere",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Anderishy",
-       "attack": 1,
-       "element": "fire"
+        "id": 6,
+        "name": "Anderishy",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Anishy",
-       "attack": 1,
-       "element": "fire"
+        "id": 7,
+        "name": "Anishy",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Anost",
-       "attack": 1,
-       "element": "fire"
+        "id": 8,
+        "name": "Anost",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Appalinnu",
-       "attack": 1,
-       "element": "fire"
+        "id": 9,
+        "name": "Appalinnu",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Aqrak",
-       "attack": 1,
-       "element": "fire"
+        "id": 10,
+        "name": "Aqrak",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Aranalikun",
-       "attack": 1,
-       "element": "fire"
+        "id": 11,
+        "name": "Aranalikun",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Arimune",
-       "attack": 1,
-       "element": "fire"
+        "id": 12,
+        "name": "Arimune",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Azotl",
-       "attack": 1,
-       "element": "fire"
+        "id": 13,
+        "name": "Azotl",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Bakawa",
-       "attack": 1,
-       "element": "fire"
+        "id": 14,
+        "name": "Bakawa",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Bakeluk",
-       "attack": 1,
-       "element": "fire"
+        "id": 15,
+        "name": "Bakeluk",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Baken",
-       "attack": 1,
-       "element": "fire"
+        "id": 16,
+        "name": "Baken",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Bakuran",
-       "attack": 1,
-       "element": "fire"
+        "id": 17,
+        "name": "Bakuran",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Bematendes",
-       "attack": 1,
-       "element": "fire"
+        "id": 18,
+        "name": "Bematendes",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Boron",
-       "attack": 1,
-       "element": "fire"
+        "id": 19,
+        "name": "Boron",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Cariffin",
-       "attack": 1,
-       "element": "fire"
+        "id": 20,
+        "name": "Cariffin",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Cateshy",
-       "attack": 1,
-       "element": "fire"
+        "id": 21,
+        "name": "Cateshy",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Chaku",
-       "attack": 1,
-       "element": "fire"
+        "id": 22,
+        "name": "Chaku",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Chimere",
-       "attack": 1,
-       "element": "fire"
+        "id": 23,
+        "name": "Chimere",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Chishangie",
-       "attack": 1,
-       "element": "fire"
+        "id": 24,
+        "name": "Chishangie",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "cyclops",
-       "attack": 1,
-       "element": "fire"
+        "id": 25,
+        "name": "cyclops",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Diwangue",
-       "attack": 1,
-       "element": "fire"
+        "id": 26,
+        "name": "Diwangue",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Duldra",
-       "attack": 1,
-       "element": "fire"
+        "id": 27,
+        "name": "Duldra",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Engiee",
-       "attack": 1,
-       "element": "fire"
+        "id": 28,
+        "name": "Engiee",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Enguarinn",
-       "attack": 1,
-       "element": "fire"
+        "id": 29,
+        "name": "Enguarinn",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Garootl",
-       "attack": 1,
-       "element": "fire"
+        "id": 30,
+        "name": "Garootl",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Ghoperan",
-       "attack": 1,
-       "element": "fire"
+        "id": 31,
+        "name": "Ghoperan",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Grinng",
-       "attack": 1,
-       "element": "fire"
+        "id": 32,
+        "name": "Grinng",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Grokishi",
-       "attack": 1,
-       "element": "fire"
+        "id": 33,
+        "name": "Grokishi",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Groncang",
-       "attack": 1,
-       "element": "fire"
+        "id": 34,
+        "name": "Groncang",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Heird",
-       "attack": 1,
-       "element": "fire"
+        "id": 35,
+        "name": "Heird",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Heirdal",
-       "attack": 1,
-       "element": "fire"
+        "id": 36,
+        "name": "Heirdal",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Heirdes",
-       "attack": 1,
-       "element": "fire"
+        "id": 37,
+        "name": "Heirdes",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Huitzotl",
-       "attack": 1,
-       "element": "fire"
+        "id": 38,
+        "name": "Huitzotl",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Hullavee",
-       "attack": 1,
-       "element": "fire"
+        "id": 39,
+        "name": "Hullavee",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Hupadze",
-       "attack": 1,
-       "element": "fire"
+        "id": 40,
+        "name": "Hupadze",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Iticolhiri",
-       "attack": 1,
-       "element": "fire"
+        "id": 41,
+        "name": "Iticolhiri",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Jianiffinn",
-       "attack": 1,
-       "element": "fire"
+        "id": 42,
+        "name": "Jianiffinn",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Jimelpie",
-       "attack": 1,
-       "element": "fire"
+        "id": 43,
+        "name": "Jimelpie",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Jimereas",
-       "attack": 1,
-       "element": "fire"
+        "id": 44,
+        "name": "Jimereas",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Jimuna",
-       "attack": 1,
-       "element": "fire"
+        "id": 45,
+        "name": "Jimuna",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Jingshi",
-       "attack": 1,
-       "element": "fire"
+        "id": 46,
+        "name": "Jingshi",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kalkoronok",
-       "attack": 1,
-       "element": "fire"
+        "id": 47,
+        "name": "Kalkoronok",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kalotsiri",
-       "attack": 1,
-       "element": "fire"
+        "id": 48,
+        "name": "Kalotsiri",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kalotsusit",
-       "attack": 1,
-       "element": "fire"
+        "id": 49,
+        "name": "Kalotsusit",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kartslavee",
-       "attack": 1,
-       "element": "fire"
+        "id": 50,
+        "name": "Kartslavee",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kasaruda",
-       "attack": 1,
-       "element": "fire"
+        "id": 51,
+        "name": "Kasaruda",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Keles",
-       "attack": 1,
-       "element": "fire"
+        "id": 52,
+        "name": "Keles",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kelpinx",
-       "attack": 1,
-       "element": "fire"
+        "id": 53,
+        "name": "Kelpinx",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kengshing",
-       "attack": 1,
-       "element": "fire"
+        "id": 54,
+        "name": "Kengshing",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kiecabun",
-       "attack": 1,
-       "element": "fire"
+        "id": 55,
+        "name": "Kiecabun",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kielpinn",
-       "attack": 1,
-       "element": "fire"
+        "id": 56,
+        "name": "Kielpinn",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kijiang",
-       "attack": 1,
-       "element": "fire"
+        "id": 57,
+        "name": "Kijiang",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kisphil",
-       "attack": 1,
-       "element": "fire"
+        "id": 58,
+        "name": "Kisphil",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kithulue",
-       "attack": 1,
-       "element": "fire"
+        "id": 59,
+        "name": "Kithulue",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kitiyamane",
-       "attack": 1,
-       "element": "fire"
+        "id": 60,
+        "name": "Kitiyamane",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Kunyipere",
-       "attack": 1,
-       "element": "fire"
+        "id": 61,
+        "name": "Kunyipere",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Lahinx",
-       "attack": 1,
-       "element": "fire"
+        "id": 62,
+        "name": "Lahinx",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Lamuieires",
-       "attack": 1,
-       "element": "fire"
+        "id": 63,
+        "name": "Lamuieires",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Leshi",
-       "attack": 1,
-       "element": "fire"
+        "id": 64,
+        "name": "Leshi",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Leshyampa",
-       "attack": 1,
-       "element": "fire"
+        "id": 65,
+        "name": "Leshyampa",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Lorochis",
-       "attack": 1,
-       "element": "fire"
+        "id": 66,
+        "name": "Lorochis",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Makasque",
-       "attack": 1,
-       "element": "fire"
+        "id": 67,
+        "name": "Makasque",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Malavee",
-       "attack": 1,
-       "element": "fire"
+        "id": 68,
+        "name": "Malavee",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Manguarog",
-       "attack": 1,
-       "element": "fire"
+        "id": 69,
+        "name": "Manguarog",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Manshy",
-       "attack": 1,
-       "element": "fire"
+        "id": 70,
+        "name": "Manshy",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Mapin",
-       "attack": 1,
-       "element": "fire"
+        "id": 71,
+        "name": "Mapin",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Mateshi",
-       "attack": 1,
-       "element": "fire"
+        "id": 72,
+        "name": "Mateshi",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Matormui",
-       "attack": 1,
-       "element": "fire"
+        "id": 73,
+        "name": "Matormui",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Mazupire",
-       "attack": 1,
-       "element": "fire"
+        "id": 74,
+        "name": "Mazupire",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Mokappa",
-       "attack": 1,
-       "element": "fire"
+        "id": 75,
+        "name": "Mokappa",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Nakalavee",
-       "attack": 1,
-       "element": "fire"
+        "id": 76,
+        "name": "Nakalavee",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Namantaras",
-       "attack": 1,
-       "element": "fire"
+        "id": 77,
+        "name": "Namantaras",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Pukwuda",
-       "attack": 1,
-       "element": "fire"
+        "id": 78,
+        "name": "Pukwuda",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Qilinates",
-       "attack": 1,
-       "element": "fire"
+        "id": 79,
+        "name": "Qilinates",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Quelukwuda",
-       "attack": 1,
-       "element": "fire"
+        "id": 80,
+        "name": "Quelukwuda",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Queshi",
-       "attack": 1,
-       "element": "fire"
+        "id": 81,
+        "name": "Queshi",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Quetzus",
-       "attack": 1,
-       "element": "fire"
+        "id": 82,
+        "name": "Quetzus",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Selpie",
-       "attack": 1,
-       "element": "fire"
+        "id": 83,
+        "name": "Selpie",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Tadorokal",
-       "attack": 1,
-       "element": "fire"
+        "id": 84,
+        "name": "Tadorokal",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Tadze",
-       "attack": 1,
-       "element": "fire"
+        "id": 85,
+        "name": "Tadze",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Tarasil",
-       "attack": 1,
-       "element": "fire"
+        "id": 86,
+        "name": "Tarasil",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Tarisie",
-       "attack": 1,
-       "element": "fire"
+        "id": 87,
+        "name": "Tarisie",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Tesheires",
-       "attack": 1,
-       "element": "fire"
+        "id": 88,
+        "name": "Tesheires",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Thecan",
-       "attack": 1,
-       "element": "fire"
+        "id": 89,
+        "name": "Thecan",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Thullinx",
-       "attack": 1,
-       "element": "fire"
+        "id": 90,
+        "name": "Thullinx",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Thupishee",
-       "attack": 1,
-       "element": "fire"
+        "id": 91,
+        "name": "Thupishee",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Tikie",
-       "attack": 1,
-       "element": "fire"
+        "id": 92,
+        "name": "Tikie",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Yackasus",
-       "attack": 1,
-       "element": "fire"
+        "id": 93,
+        "name": "Yackasus",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Yamang",
-       "attack": 1,
-       "element": "fire"
+        "id": 94,
+        "name": "Yamang",
+        "attack": 1,
+        "element": "fire"
     },
     {
-       "name": "Yangdra",
-       "attack": 1,
-       "element": "fire"
+        "id": 95,
+        "name": "Yangdra",
+        "attack": 1,
+        "element": "fire"
     }
 ]

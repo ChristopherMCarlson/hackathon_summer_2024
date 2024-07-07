@@ -4,7 +4,7 @@
             <v-col cols="2">
                 <v-list style="overflow-y: auto; max-height: 90vh;">
                     <v-list-item
-                    v-for="monster in monsters"
+                    v-for="monster in monsters.filter(monster => seenMonsters.includes(monster.id))"
                     :key="monster.name"
                     @click="activeMonster = monster"
                     >
@@ -18,7 +18,7 @@
                     <v-card-text>
                         <v-row>
                             <v-col cols="6">
-                                <v-img :src="require(`@/assets/monsters/${activeMonster.name}.png`)" />
+                                <v-img :src="require(`@/assets/monsters/${activeMonster.name}-${activeMonster.id < 10 ? '0' : ''}${activeMonster.id}.png`)" />
                             </v-col>
                             <v-col cols="6">
                                 <p>{{ activeMonster.description }}</p>
@@ -40,6 +40,7 @@
         data: () => ({
             monsters: monstersData,
             activeMonster: null,
+            seenMonsters: [1,6,45,24,76,23],
         }),
     }
 </script>

@@ -36,7 +36,7 @@
                         <v-img class="location-image" :src="require(`@/assets/icons/hunt.png`)" />
                     </v-card-text>
                     <v-card-actions>
-                        <v-btn @click="gatherResource(resource)">Hunt</v-btn>
+                        <v-btn @click="huntMonsters()">Hunt</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-col>
@@ -64,6 +64,7 @@
 <script>
     import locationsData from "@/assets/tables/locations.json";
     import resourceData from "@/assets/tables/resources.json";
+    import monstersData from "@/assets/tables/monsters.json"
 
     export default {
         name: 'WildernessComponent',
@@ -84,6 +85,11 @@
                 }).join('')
             },
             gatherResource(resource) {
+                // 10% chance to enter huntMonsters function
+                if (Math.random() < 0.1) {
+                    this.huntMonsters();
+                    return;
+                }
                 //check if resource is stone
                 if (resource == 1) {
                     //check if player has pickaxe
@@ -99,6 +105,13 @@
                         }
                     }
                 }
+            },
+            huntMonsters(){
+                //select a random monster from the available encounters in a location
+                const randomMonsterIndex = Math.floor(Math.random() * this.selectedLocation.encounters.length);
+                const randomMonster = monstersData.find(x => x.id == this.selectedLocation.encounters[randomMonsterIndex]);
+                // Use the randomMonster for further processing
+                console.log(randomMonster);
             }
         },
         computed: {

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Workbench",
+        "description": "A workbench is a table used by crafters to make items.",
+        "image": "workbench.png",
+        "resources": [
+            {
+                "name": "Wood",
+                "quantity": 10
+            }
+        ]
+    },
+    {
+        "name": "Furnace",
+        "description": "A primative furnace used to smelt ores.",
+        "image": "furnace.png",
+        "resources": [
+            {
+                "name": "Stone",
+                "quantity": 30
+            }
+        ]
+    },
+    {
+        "name": "Stove",
+        "description": "A stove is used to cook food.",
+        "image": "stove.png",
+        "resources": [
+            {
+                "name": "Stone",
+                "quantity": 10
+            }
+        ]
+    }
+]

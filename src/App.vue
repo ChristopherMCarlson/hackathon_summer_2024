@@ -4,6 +4,9 @@
       v-model="drawer"
       app
     >
+      <v-img>
+        <v-img src="@/assets/logo.png" />
+      </v-img>
       <v-list>
         <v-list-item
           v-for="component in components"
@@ -19,7 +22,7 @@
     </v-navigation-drawer>
 
     <v-app-bar app>
-      <v-toolbar-title>{{ activeComponent.label }}</v-toolbar-title>
+      <v-toolbar-title class="titles">{{ activeComponent.label }}</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
@@ -34,6 +37,7 @@
   import ActiveTeam from './components/ActiveTeamComponent.vue' // eslint-disable-line
   import Wilderness from './components/WildernessComponent.vue' // eslint-disable-line
   import Encyclopedia from './components/EncyclopediaComponent.vue' // eslint-disable-line
+  import Inventory from './components/InventoryComponent.vue' // eslint-disable-line
   export default {
     data: () => ({
       drawer: true,
@@ -47,6 +51,11 @@
             label: 'Home',
             icon: 'mdi-home',
             component: Home,
+          },
+          {
+            label: 'Inventory',
+            icon: 'mdi-package-variant-closed',
+            component: Inventory,
           },
           {
             label: 'Skills',
@@ -72,3 +81,16 @@
       }),
   }
 </script>
+
+<style>
+  @font-face {
+    font-family: 'Karmatic Arcade';
+    src: url('~@/assets/ka1.ttf') format('truetype');
+  }
+
+  .titles {
+    font-family: 'Karmatic Arcade', sans-serif;
+    color: #00FFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+</style>

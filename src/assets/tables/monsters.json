@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Goblin",
+        "health": 10,
+        "attack": 5,
+        "defense": 2,
+        "speed": 3,
+        "experience": 10
+    },
+    {
+        "name": "Orc",
+        "health": 20,
+        "attack": 10,
+        "defense": 5,
+        "speed": 5,
+        "experience": 20
+    },
+    {
+        "name": "Troll",
+        "health": 30,
+        "attack": 15,
+        "defense": 10,
+        "speed": 2,
+        "experience": 30
+    },
+    {
+        "name": "Dragon",
+        "health": 50,
+        "attack": 20,
+        "defense": 15,
+        "speed": 10,
+        "experience": 50
+    },
+    {
+        "name": "Demon",
+        "health": 100,
+        "attack": 30,
+        "defense": 20,
+        "speed": 15,
+        "experience": 100
+    },
+    {
+        "name": "God",
+        "health": 1000,
+        "attack": 100,
+        "defense": 100,
+        "speed": 100,
+        "experience": 1000
+    },
+    {
+        "name": "Goblin King",
+        "health": 100,
+        "attack": 50,
+        "defense": 20,
+        "speed": 30,
+        "experience": 100
+    },
+    {
+        "name": "Orc King",
+        "health": 200,
+        "attack": 100,
+        "defense": 50,
+        "speed": 50,
+        "experience": 200
+    },
+    {
+        "name": "Troll King",
+        "health": 300,
+        "attack": 150,
+        "defense": 100,
+        "speed": 20,
+        "experience": 300
+    },
+    {
+        "name": "Dragon King",
+        "health": 500,
+        "attack": 200,
+        "defense": 150,
+        "speed": 100,
+        "experience": 500
+    },
+    {
+        "name": "Demon King",
+        "health": 1000,
+        "attack": 300,
+        "defense": 200,
+        "speed": 150,
+        "experience": 1000
+    },
+    {
+        "name": "God King",
+        "health": 10000,
+        "attack": 1000,
+        "defense": 1000,
+        "speed": 1000,
+        "experience": 10000
+    }
+]

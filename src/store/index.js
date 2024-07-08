@@ -12,6 +12,7 @@ export default new Vuex.Store({
     capturedMonsters: [],
     playerMonsters: [],
     playerMonstersTeam: [],
+    playerBase: [],
     tutorialObjectives: [
       "Chop down trees for wood in the peaceful woods",
       "Build a workbench to craft items in your base",
@@ -31,13 +32,22 @@ export default new Vuex.Store({
         state.playerResourceInventory.push(item);
         console.log(state.playerResourceInventory);
       }
+    },
+    removeResourceFromInventory(state, item) {
+      if(state.playerResourceInventory.find(i => i.id === item.id)) {
+        state.playerResourceInventory.find(i => i.id === item.id).quantity -= item.quantity;
+      } else {
+        console.log('Item not found');
+      }
     }
   },
   actions: {
-    // Add item to player inventory
     addResourceToInventory(store, item) {
       store.commit('addResourceToInventory', item);
     },
+    removeResourceFromInventory(store, item) {
+      store.commit('removeResourceFromInventory', item);
+    }
   },
   modules: {
   }

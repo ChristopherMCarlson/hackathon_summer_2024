@@ -23,7 +23,7 @@
         
                                 <v-card-subtitle>{{ tech.description }}</v-card-subtitle>
                                 <v-card-text>Requires:</v-card-text>
-                                <v-card-text v-for="resource in tech.resources" :key="resource.name" :class="checkInventory(resource) ? '' : 'red--text'">{{ resource.name }} - {{ resource.quantity }}</v-card-text>
+                                <v-card-text v-for="resource in tech.resources" :key="resource.name" :class="checkInventory(resource) ? '' : 'red--text'">{{ resource.name }}: {{ resource.quantity }}</v-card-text>
         
                             </div>
                             <div>
@@ -41,6 +41,7 @@
                                     outlined
                                     rounded
                                     small
+                                    @click="buildTech(tech)"
                                 >
                                     Build
                                 </v-btn>
@@ -55,6 +56,23 @@
                 <!-- Content for Manage Monsters tab -->
             </v-tab-item>
         </v-tabs-items>
+        <v-snackbar
+            v-model="snackbar"
+            :timeout="timeout"
+            >
+            {{ text }}
+
+            <template v-slot:action="{ attrs }">
+                <v-btn
+                color="blue"
+                text
+                v-bind="attrs"
+                @click="snackbar = false"
+                >
+                Close
+                </v-btn>
+            </template>
+        </v-snackbar>
     </v-container>
 </template>
 
@@ -67,17 +85,36 @@
                 tab: 'manage-base',
                 techData: techData,
                 managingBase: false,
+                snackbar: false,
+                text: '',
+                timeout: 2000,
             }
         },
         methods: {
             checkInventory(resource) {
                 if(this.playerInventory.find(x => x.id == resource.id)){
-                    console.log('resource found');
                     return this.playerInventory.find(x => x.id == resource.id).quantity >= resource.quantity;
                 } else {
-                    console.log('resource not found');
                     return false;
                 }
+            },
+            buildTech(tech) {
+                tech.resources.forEach(resource => {
+                    if(this.playerInventory.find(x => x.id == resource.id)){
+                        if(this.playerInventory.find(x => x.id == resource.id).quantity < resource.quantity){
+                            this.text = 'You do not have enough resources to build this.';
+                            this.snackbar = true;
+                            return;
+                        }
+                    } else {
+                        this.text = 'You do not have enough resources to build this.';
+                        this.snackbar = true;
+                        return;
+                    }
+                });
+                tech.resources.forEach(resource => {
+                    this.$store.commit('removeResourceFromInventory', resource);
+                });
             }
         },
         computed: {

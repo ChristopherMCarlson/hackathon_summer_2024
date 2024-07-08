@@ -13,7 +13,7 @@
             <v-tab-item value="manage-base">
                 <!-- Content for Manage Base tab -->
                 <v-row>
-                    <v-col cols="4" v-for="tech in techData" :key="tech.name">
+                    <v-col cols="6" v-for="tech in techData" :key="tech.name">
                         <v-card dark height="100%">
                             <div class="d-flex flex-no-wrap justify-space-between">
                             <div class="">
@@ -23,7 +23,7 @@
         
                                 <v-card-subtitle>{{ tech.description }}</v-card-subtitle>
                                 <v-card-text>Requires:</v-card-text>
-                                <v-card-text v-for="resource in tech.resources" :key="resource.name">{{ resource.name }} - {{ resource.quantity }}</v-card-text>
+                                <v-card-text v-for="resource in tech.resources" :key="resource.name" :class="checkInventory(resource) ? '' : 'red--text'">{{ resource.name }} - {{ resource.quantity }}</v-card-text>
         
                             </div>
                             <div>
@@ -69,9 +69,20 @@
                 managingBase: false,
             }
         },
+        methods: {
+            checkInventory(resource) {
+                if(this.playerInventory.find(x => x.id == resource.id)){
+                    console.log('resource found');
+                    return this.playerInventory.find(x => x.id == resource.id).quantity >= resource.quantity;
+                } else {
+                    console.log('resource not found');
+                    return false;
+                }
+            }
+        },
         computed: {
             playerInventory() {
-                return this.$store.state.playerResourceInventory.concat(this.$store.state.playerItemInventory);
+                return this.$store.state.playerResourceInventory;
             }
         }
     }

@@ -5,6 +5,7 @@
         "image": "workbench.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 10
             }
@@ -17,6 +18,7 @@
         "image": "furnace.png",
         "resources": [
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 30
             }
@@ -28,6 +30,7 @@
         "image": "stove.png",
         "resources": [
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 10
             }
@@ -39,10 +42,12 @@
         "image": "berryFarm.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 50
             },
             {
+                "id": 2,
                 "name": "Berries",
                 "quantity": 100
             }
@@ -54,10 +59,12 @@
         "image": "stoneQuarry.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 50
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 100
             }
@@ -69,10 +76,12 @@
         "image": "loggingSite.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 200
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 50
             }
@@ -84,14 +93,17 @@
         "image": "oreMine.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 50
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 100
             },
             {
+                "id": 3,
                 "name": "Ore",
                 "quantity": 100
             }
@@ -103,14 +115,17 @@
         "image": "coalMine.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 50
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 100
             },
             {
+                "id": 4,
                 "name": "Coal",
                 "quantity": 100
             }
@@ -122,14 +137,17 @@
         "image": "crystalMine.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 50
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 100
             },
             {
+                "id": 5,
                 "name": "Crystal",
                 "quantity": 100
             }
@@ -141,14 +159,17 @@
         "image": "medicineBench.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 50
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 50
             },
             {
+                "id": 2,
                 "name": "Berries",
                 "quantity": 50
             }
@@ -160,14 +181,17 @@
         "image": "forge.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 50
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 300
             },
             {
+                "id": 1,
                 "name": "Iron",
                 "quantity": 50
             }
@@ -179,14 +203,17 @@
         "image": "conduitBench.png",
         "resources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 200
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 50
             },
             {
+                "id": 5,
                 "name": "Crystal",
                 "quantity": 200
             }

@@ -4,7 +4,7 @@
         "minLevel": 1,
         "maxLevel": 10,
         "encounters": [0, 4, 6, 9, 12, 12, 16, 17, 19, 24],
-        "resources": [0, 1, 2],
+        "resources": [0, 1, 2, 5],
         "rareEncounters": []
     },
     {

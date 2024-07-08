@@ -71,30 +71,6 @@
     },
     {
         "id": 5,
-        "name": "Iron",
-        "requiredResources": [
-            {
-                "name": "Ore",
-                "quantity": 2
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Steel",
-        "requiredResources": [
-            {
-                "name": "Ore",
-                "quantity": 2
-            },
-            {
-                "name": "Coal",
-                "quantity": 1
-            }
-        ]
-    },
-    {
-        "id": 7,
         "name": "Red Medicine",
         "requiredResources": [
             {
@@ -104,7 +80,7 @@
         ]
     },
     {
-        "id": 8,
+        "id": 6,
         "name": "Blue Medicine",
         "requiredResources": [
             {
@@ -118,7 +94,7 @@
         ]
     },
     {
-        "id": 9,
+        "id": 7,
         "name": "Yellow Medicine",
         "requiredResources": [
             {

@@ -39,6 +39,10 @@ export default new Vuex.Store({
       } else {
         console.log('Item not found');
       }
+    },
+    addTechToBase(state, tech) {
+      state.playerBase.push(tech);
+      console.log(state.playerBase);
     }
   },
   actions: {
@@ -47,6 +51,9 @@ export default new Vuex.Store({
     },
     removeResourceFromInventory(store, item) {
       store.commit('removeResourceFromInventory', item);
+    },
+    addTechToBase(store, tech) {
+      store.commit('addTechToBase', tech);
     }
   },
   modules: {

@@ -9,6 +9,29 @@
         <v-tabs-items v-model="tab">
             <v-tab-item value="view-base">
                 <!-- Content for View Base tab -->
+                 <v-row>
+                    <v-col cols="6" v-for="tech in playerBase" :key="tech.id">
+                        <v-card dark height="100%">
+                            <div class="d-flex flex-no-wrap justify-space-between">
+                            <div class="">
+                                <v-card-title
+                                class="text-h5"
+                                > {{ tech.name }}</v-card-title>
+                                <v-card-subtitle>{{ tech.description }}</v-card-subtitle>        
+                            </div>
+                            <div>
+                                <v-avatar
+                                class="ma-3"
+                                size="125"
+                                tile
+                                >
+                                    <v-img :src="require(`@/assets/tech/${tech.image}`)"></v-img>
+                                </v-avatar>
+                            </div>
+                            </div>
+                        </v-card>
+                    </v-col>
+                 </v-row>
             </v-tab-item>
             <v-tab-item value="manage-base">
                 <!-- Content for Manage Base tab -->
@@ -99,6 +122,7 @@
                 }
             },
             buildTech(tech) {
+                tech.id = this.generateGuid();
                 tech.resources.forEach(resource => {
                     if(this.playerInventory.find(x => x.id == resource.id)){
                         if(this.playerInventory.find(x => x.id == resource.id).quantity < resource.quantity){
@@ -115,11 +139,25 @@
                 tech.resources.forEach(resource => {
                     this.$store.commit('removeResourceFromInventory', resource);
                 });
+                this.$store.commit('addTechToBase', tech);
+                this.text = 'Tech built successfully.';
+                this.snackbar = true;
+            },
+            generateGuid() {
+                const s4 = () => {
+                    return Math.floor((1 + Math.random()) * 0x10000)
+                    .toString(16)
+                    .substring(1);
+                };
+                return s4() + s4() + "-" + s4() + "-" + s4() + "-" + s4() + "-" + s4() + s4() + s4();
             }
         },
         computed: {
             playerInventory() {
                 return this.$store.state.playerResourceInventory;
+            },
+            playerBase() {
+                return this.$store.state.playerBase;
             }
         }
     }

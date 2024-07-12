@@ -141,6 +141,9 @@
                 let techToAdd = JSON.parse(JSON.stringify(tech));
                 techToAdd.id = this.generateGuid();
                 this.$store.commit('addTechToBase', techToAdd);
+                if(this.$store.state.tutorialObjectives.includes("Build a workbench to craft items in your base") && techToAdd.name == "Workbench"){
+                    this.$store.commit('completeTutorialObjective', "Build a workbench to craft items in your base");
+                }
                 this.text = 'Tech built successfully.';
                 this.snackbar = true;
             },

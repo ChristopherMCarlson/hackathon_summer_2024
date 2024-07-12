@@ -124,7 +124,12 @@
                         this.text = `You obtained ${this.resources.find(x => x.id == resource).name}.`
                     } else {
                         this.text = `You obtained ${this.resources.find(x => x.id == resource).name}. Craft a ${this.items.find(x => x.id == this.resources.find(x => x.id == resource).gatherItem).name} to gather more efficiently.`
-
+                    }
+                    if(this.$store.state.tutorialObjectives.includes("Chop down trees for wood in the peaceful woods") && resource == 0){
+                        this.$store.commit('completeTutorialObjective', "Chop down trees for wood in the peaceful woods");
+                    }
+                    if(this.$store.state.tutorialObjectives.includes("Mine for crystal in the peaceful woods") && resource == 5){
+                        this.$store.commit('completeTutorialObjective', "Mine for crystal in the peaceful woods");
                     }
                     this.snackbar = true
                     this.tickCount = 0;

@@ -43,6 +43,9 @@ export default new Vuex.Store({
     addTechToBase(state, tech) {
       state.playerBase.push(tech);
       console.log(state.playerBase);
+    },
+    completeTutorialObjective(state, objective) {
+      state.tutorialObjectives.splice(state.tutorialObjectives.indexOf(objective), 1);
     }
   },
   actions: {
@@ -54,6 +57,9 @@ export default new Vuex.Store({
     },
     addTechToBase(store, tech) {
       store.commit('addTechToBase', tech);
+    },
+    completeTutorialObjective(store, objective) {
+      store.commit('completeTutorialObjective', objective);
     }
   },
   modules: {

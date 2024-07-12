@@ -4,7 +4,7 @@
       "name": "flambe",
       "attack": 1,
       "element": "fire",
-      "image": "01-flambe-fire.png",
+      "image": "01-flambe-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -19,7 +19,7 @@
       "name": "leavie",
       "attack": 1,
       "element": "grass",
-      "image": "02-leavie-grass.png",
+      "image": "02-leavie-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -34,7 +34,7 @@
       "name": "droplett",
       "attack": 1,
       "element": "water",
-      "image": "03-droplett-water.png",
+      "image": "03-droplett-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -49,7 +49,7 @@
       "name": "sandyum",
       "attack": 1,
       "element": "neutral",
-      "image": "04-sandyum-neutral.png",
+      "image": "04-sandyum-neutral",
       "workSuitability": [
         {
           "mining": 1,
@@ -62,9 +62,9 @@
     {
       "id": 5,
       "name": "darkime",
-      "attack": 1,
+      "attack": 2,
       "element": "dark",
-      "image": "05-darkime-dark.png",
+      "image": "05-darkime-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -77,9 +77,9 @@
     {
       "id": 6,
       "name": "holyight",
-      "attack": 1,
+      "attack": 2,
       "element": "light",
-      "image": "06-holyight-light.png",
+      "image": "06-holyight-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -92,9 +92,9 @@
     {
       "id": 7,
       "name": "magmor",
-      "attack": 1,
+      "attack": 2,
       "element": "fire",
-      "image": "07-magmor-fire.png",
+      "image": "07-magmor-fire",
       "workSuitability": [
         {
           "mining": 1,
@@ -107,9 +107,9 @@
     {
       "id": 8,
       "name": "leamantis",
-      "attack": 1,
+      "attack": 2,
       "element": "grass",
-      "image": "08-leamantis-grass.png",
+      "image": "08-leamantis-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -122,9 +122,9 @@
     {
       "id": 9,
       "name": "driplett",
-      "attack": 1,
+      "attack": 2,
       "element": "water",
-      "image": "09-driplett-water.png",
+      "image": "09-driplett-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -137,9 +137,9 @@
     {
       "id": 10,
       "name": "graund",
-      "attack": 1,
+      "attack": 2,
       "element": "neutral",
-      "image": "10-graund-neutral.png",
+      "image": "10-graund-neutral",
       "workSuitability": [
         {
           "mining": 2,
@@ -152,9 +152,9 @@
     {
       "id": 11,
       "name": "darkraven",
-      "attack": 1,
+      "attack": 3,
       "element": "dark",
-      "image": "11-darkraven-dark.png",
+      "image": "11-darkraven-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -167,9 +167,9 @@
     {
       "id": 12,
       "name": "luceras",
-      "attack": 1,
+      "attack": 3,
       "element": "light",
-      "image": "12-luceras-light.png",
+      "image": "12-luceras-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -182,9 +182,9 @@
     {
       "id": 13,
       "name": "fennic",
-      "attack": 1,
+      "attack": 3,
       "element": "fire",
-      "image": "13-fennic-fire.png",
+      "image": "13-fennic-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -197,9 +197,9 @@
     {
       "id": 14,
       "name": "lizzon",
-      "attack": 1,
+      "attack": 3,
       "element": "grass",
-      "image": "14-lizzon-grass.png",
+      "image": "14-lizzon-grass",
       "workSuitability": [
         {
           "mining": 1,
@@ -212,9 +212,9 @@
     {
       "id": 15,
       "name": "rivule",
-      "attack": 1,
+      "attack": 3,
       "element": "water",
-      "image": "15-rivule-water.png",
+      "image": "15-rivule-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -227,9 +227,9 @@
     {
       "id": 16,
       "name": "sanditt",
-      "attack": 1,
+      "attack": 3,
       "element": "neutral",
-      "image": "16-sanditt-neutral.png",
+      "image": "16-sanditt-neutral",
       "workSuitability": [
         {
           "mining": 0,
@@ -242,9 +242,9 @@
     {
       "id": 17,
       "name": "impon",
-      "attack": 1,
+      "attack": 4,
       "element": "dark",
-      "image": "17-impon-dark.png",
+      "image": "17-impon-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -257,9 +257,9 @@
     {
       "id": 18,
       "name": "vitos",
-      "attack": 1,
+      "attack": 4,
       "element": "light",
-      "image": "18-vitos-light.png",
+      "image": "18-vitos-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -272,9 +272,9 @@
     {
       "id": 19,
       "name": "incawhisp",
-      "attack": 1,
+      "attack": 4,
       "element": "fire",
-      "image": "19-incawhisp-fire.png",
+      "image": "19-incawhisp-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -287,9 +287,9 @@
     {
       "id": 20,
       "name": "lanche",
-      "attack": 1,
+      "attack": 4,
       "element": "grass",
-      "image": "20-lanche-grass.png",
+      "image": "20-lanche-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -302,9 +302,9 @@
     {
       "id": 21,
       "name": "azuris",
-      "attack": 1,
+      "attack": 4,
       "element": "water",
-      "image": "21-azuris-water.png",
+      "image": "21-azuris-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -317,9 +317,9 @@
     {
       "id": 22,
       "name": "rhinocerops",
-      "attack": 1,
+      "attack": 4,
       "element": "neutral",
-      "image": "22-rhinocerops-neutral.png",
+      "image": "22-rhinocerops-neutral",
       "workSuitability": [
         {
           "mining": 0,
@@ -332,9 +332,9 @@
     {
       "id": 23,
       "name": "leuko",
-      "attack": 1,
+      "attack": 5,
       "element": "dark",
-      "image": "23-leuko-dark.png",
+      "image": "23-leuko-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -347,9 +347,9 @@
     {
       "id": 24,
       "name": "eros",
-      "attack": 1,
+      "attack": 5,
       "element": "light",
-      "image": "24-eros-light.png",
+      "image": "24-eros-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -362,9 +362,9 @@
     {
       "id": 25,
       "name": "salamandra",
-      "attack": 1,
+      "attack": 5,
       "element": "fire",
-      "image": "25-salamandra-fire.png",
+      "image": "25-salamandra-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -377,9 +377,9 @@
     {
       "id": 26,
       "name": "avalan",
-      "attack": 1,
+      "attack": 5,
       "element": "grass",
-      "image": "26-avalan-grass.png",
+      "image": "26-avalan-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -392,9 +392,9 @@
     {
       "id": 27,
       "name": "krakelin",
-      "attack": 1,
+      "attack": 5,
       "element": "water",
-      "image": "27-krakelin-water.png",
+      "image": "27-krakelin-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -407,9 +407,9 @@
     {
       "id": 28,
       "name": "rockstor",
-      "attack": 1,
+      "attack": 5,
       "element": "neutral",
-      "image": "28-rockstor-neutral.png",
+      "image": "28-rockstor-neutral",
       "workSuitability": [
         {
           "mining": 0,
@@ -422,9 +422,9 @@
     {
       "id": 29,
       "name": "noctuwhisp",
-      "attack": 1,
+      "attack": 7,
       "element": "dark",
-      "image": "29-noctuwhisp-dark.png",
+      "image": "29-noctuwhisp-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -437,9 +437,9 @@
     {
       "id": 30,
       "name": "purisp",
-      "attack": 1,
+      "attack": 7,
       "element": "light",
-      "image": "30-purisp-light.png",
+      "image": "30-purisp-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -452,9 +452,9 @@
     {
       "id": 31,
       "name": "flamajor",
-      "attack": 1,
+      "attack": 7,
       "element": "fire",
-      "image": "31-flamajor-fire.png",
+      "image": "31-flamajor-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -467,9 +467,9 @@
     {
       "id": 32,
       "name": "planteeth",
-      "attack": 1,
+      "attack": 7,
       "element": "grass",
-      "image": "32-planteeth-grass.png",
+      "image": "32-planteeth-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -482,9 +482,9 @@
     {
       "id": 33,
       "name": "kappagon",
-      "attack": 1,
+      "attack": 7,
       "element": "water",
-      "image": "33-kappagon-water.png",
+      "image": "33-kappagon-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -497,9 +497,9 @@
     {
       "id": 34,
       "name": "lutu",
-      "attack": 1,
+      "attack": 7,
       "element": "neutral",
-      "image": "34-lutu-neutral.png",
+      "image": "34-lutu-neutral",
       "workSuitability": [
         {
           "mining": 0,
@@ -512,9 +512,9 @@
     {
       "id": 35,
       "name": "vilis",
-      "attack": 1,
+      "attack": 8,
       "element": "dark",
-      "image": "35-vilis-dark.png",
+      "image": "35-vilis-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -527,9 +527,9 @@
     {
       "id": 36,
       "name": "gallantdrop",
-      "attack": 1,
+      "attack": 8,
       "element": "light",
-      "image": "36-gallantdrop-light.png",
+      "image": "36-gallantdrop-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -542,9 +542,9 @@
     {
       "id": 37,
       "name": "flamage",
-      "attack": 1,
+      "attack": 8,
       "element": "fire",
-      "image": "37-flamage-fire.png",
+      "image": "37-flamage-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -557,9 +557,9 @@
     {
       "id": 38,
       "name": "cacteon",
-      "attack": 1,
+      "attack": 8,
       "element": "grass",
-      "image": "38-cacteon-grass.png",
+      "image": "38-cacteon-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -572,9 +572,9 @@
     {
       "id": 39,
       "name": "vapos",
-      "attack": 1,
+      "attack": 8,
       "element": "water",
-      "image": "39-vapos-water.png",
+      "image": "39-vapos-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -587,9 +587,9 @@
     {
       "id": 40,
       "name": "bulder",
-      "attack": 1,
+      "attack": 8,
       "element": "neutral",
-      "image": "40-bulder-neutral.png",
+      "image": "40-bulder-neutral",
       "workSuitability": [
         {
           "mining": 0,
@@ -602,9 +602,9 @@
     {
       "id": 41,
       "name": "cimmeris",
-      "attack": 1,
+      "attack": 9,
       "element": "dark",
-      "image": "41-cimmeris-dark.png",
+      "image": "41-cimmeris-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -617,9 +617,9 @@
     {
       "id": 42,
       "name": "solas",
-      "attack": 1,
+      "attack": 9,
       "element": "light",
-      "image": "42-solas-light.png",
+      "image": "42-solas-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -632,9 +632,9 @@
     {
       "id": 43,
       "name": "tigross",
-      "attack": 1,
+      "attack": 9,
       "element": "fire",
-      "image": "43-tigross-fire.png",
+      "image": "43-tigross-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -647,9 +647,9 @@
     {
       "id": 44,
       "name": "thornton",
-      "attack": 1,
+      "attack": 9,
       "element": "grass",
-      "image": "44-thornton-grass.png",
+      "image": "44-thornton-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -662,9 +662,9 @@
     {
       "id": 45,
       "name": "typhos",
-      "attack": 1,
+      "attack": 9,
       "element": "water",
-      "image": "45-typhos-water.png",
+      "image": "45-typhos-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -677,9 +677,9 @@
     {
       "id": 46,
       "name": "spiristone",
-      "attack": 1,
+      "attack": 9,
       "element": "neutral",
-      "image": "46-spiristone-neutral.png",
+      "image": "46-spiristone-neutral",
       "workSuitability": [
         {
           "mining": 0,
@@ -692,9 +692,9 @@
     {
       "id": 47,
       "name": "cyclopus",
-      "attack": 1,
+      "attack": 10,
       "element": "dark",
-      "image": "47-cyclopus-dark.png",
+      "image": "47-cyclopus-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -707,9 +707,9 @@
     {
       "id": 48,
       "name": "whisper",
-      "attack": 1,
+      "attack": 10,
       "element": "light",
-      "image": "48-whisper-light.png",
+      "image": "48-whisper-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -722,9 +722,9 @@
     {
       "id": 49,
       "name": "feathor",
-      "attack": 1,
+      "attack": 10,
       "element": "fire",
-      "image": "49-feathor-fire.png",
+      "image": "49-feathor-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -737,9 +737,9 @@
     {
       "id": 50,
       "name": "treeny",
-      "attack": 1,
+      "attack": 10,
       "element": "grass",
-      "image": "50-treeny-grass.png",
+      "image": "50-treeny-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -752,9 +752,9 @@
     {
       "id": 51,
       "name": "hydragon",
-      "attack": 1,
+      "attack": 10,
       "element": "water",
-      "image": "51-hydragon-water.png",
+      "image": "51-hydragon-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -767,9 +767,9 @@
     {
       "id": 52,
       "name": "stonotaurus",
-      "attack": 1,
+      "attack": 10,
       "element": "neutral",
-      "image": "52-stonotaurus-neutral.png",
+      "image": "52-stonotaurus-neutral",
       "workSuitability": [
         {
           "mining": 0,
@@ -782,9 +782,9 @@
     {
       "id": 53,
       "name": "narchis",
-      "attack": 1,
+      "attack": 11,
       "element": "dark",
-      "image": "53-narchis-dark.png",
+      "image": "53-narchis-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -797,9 +797,9 @@
     {
       "id": 54,
       "name": "gallantisp",
-      "attack": 1,
+      "attack": 11,
       "element": "light",
-      "image": "54-gallantisp-light.png",
+      "image": "54-gallantisp-light",
       "workSuitability": [
         {
           "mining": 0,
@@ -812,9 +812,9 @@
     {
       "id": 55,
       "name": "charcoalem",
-      "attack": 1,
+      "attack": 11,
       "element": "fire",
-      "image": "55-charcoalem-fire.png",
+      "image": "55-charcoalem-fire",
       "workSuitability": [
         {
           "mining": 0,
@@ -827,9 +827,9 @@
     {
       "id": 56,
       "name": "behement",
-      "attack": 1,
+      "attack": 11,
       "element": "grass",
-      "image": "56-behement-grass.png",
+      "image": "56-behement-grass",
       "workSuitability": [
         {
           "mining": 0,
@@ -842,9 +842,9 @@
     {
       "id": 57,
       "name": "talis",
-      "attack": 1,
+      "attack": 11,
       "element": "water",
-      "image": "57-talis-water.png",
+      "image": "57-talis-water",
       "workSuitability": [
         {
           "mining": 0,
@@ -857,9 +857,9 @@
     {
       "id": 58,
       "name": "drakon",
-      "attack": 1,
+      "attack": 11,
       "element": "neutral",
-      "image": "58-drakon-neutral.png",
+      "image": "58-drakon-neutral",
       "workSuitability": [
         {
           "mining": 0,
@@ -872,9 +872,9 @@
     {
       "id": 59,
       "name": "veilios",
-      "attack": 1,
+      "attack": 12,
       "element": "dark",
-      "image": "59-veilios-dark.png",
+      "image": "59-veilios-dark",
       "workSuitability": [
         {
           "mining": 0,
@@ -887,9 +887,9 @@
     {
       "id": 60,
       "name": "beakin",
-      "attack": 1,
+      "attack": 12,
       "element": "light",
-      "image": "60-beakin-light.png",
+      "image": "60-beakin-light",
       "workSuitability": [
         {
           "mining": 0,

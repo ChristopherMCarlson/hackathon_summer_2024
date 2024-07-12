@@ -122,7 +122,6 @@
                 }
             },
             buildTech(tech) {
-                tech.id = this.generateGuid();
                 tech.resources.forEach(resource => {
                     if(this.playerInventory.find(x => x.id == resource.id)){
                         if(this.playerInventory.find(x => x.id == resource.id).quantity < resource.quantity){
@@ -139,7 +138,9 @@
                 tech.resources.forEach(resource => {
                     this.$store.commit('removeResourceFromInventory', resource);
                 });
-                this.$store.commit('addTechToBase', tech);
+                let techToAdd = JSON.parse(JSON.stringify(tech));
+                techToAdd.id = this.generateGuid();
+                this.$store.commit('addTechToBase', techToAdd);
                 this.text = 'Tech built successfully.';
                 this.snackbar = true;
             },

@@ -1,1346 +1,902 @@
 [
     {
-        "id": 0,
-        "name": "Abang",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Ahimui",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Ahinx",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Akelpie",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Anaque",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Andere",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Anderishy",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "name": "Anishy",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "name": "Anost",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "name": "Appalinnu",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "name": "Aqrak",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 11,
-        "name": "Aranalikun",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 12,
-        "name": "Arimune",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 13,
-        "name": "Azotl",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 14,
-        "name": "Bakawa",
-        "attack": 1,
-        "element": "light",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 15,
-        "name": "Bakeluk",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 16,
-        "name": "Baken",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 17,
-        "name": "Bakuran",
-        "attack": 1,
-        "element": "light",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 18,
-        "name": "Bematendes",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 19,
-        "name": "Boron",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 20,
-        "name": "Cariffin",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 21,
-        "name": "Cateshy",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 22,
-        "name": "Chaku",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 23,
-        "name": "Chimere",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 24,
-        "name": "Chishangie",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 25,
-        "name": "cyclops",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 26,
-        "name": "Diwangue",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 27,
-        "name": "Duldra",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 28,
-        "name": "Engiee",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 29,
-        "name": "Enguarinn",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 30,
-        "name": "Garootl",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 31,
-        "name": "Ghoperan",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 32,
-        "name": "Grinng",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 33,
-        "name": "Grokishi",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 34,
-        "name": "Groncang",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 35,
-        "name": "Heird",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 36,
-        "name": "Heirdal",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 37,
-        "name": "Heirdes",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 38,
-        "name": "Huitzotl",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 39,
-        "name": "Hullavee",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 40,
-        "name": "Hupadze",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 41,
-        "name": "Iticolhiri",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 42,
-        "name": "Jianiffinn",
-        "attack": 1,
-        "element": "light",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 43,
-        "name": "Jimelpie",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 44,
-        "name": "Jimereas",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 45,
-        "name": "Jimuna",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 46,
-        "name": "Jingshi",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 47,
-        "name": "Kalkoronok",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 48,
-        "name": "Kalotsiri",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 49,
-        "name": "Kalotsusit",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 50,
-        "name": "Kartslavee",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 51,
-        "name": "Kasaruda",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 52,
-        "name": "Keles",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 53,
-        "name": "Kelpinx",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 54,
-        "name": "Kengshing",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 55,
-        "name": "Kiecabun",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 56,
-        "name": "Kielpinn",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 57,
-        "name": "Kijiang",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 58,
-        "name": "Kisphil",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 59,
-        "name": "Kithulue",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 60,
-        "name": "Kitiyamane",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 61,
-        "name": "Kunyipere",
-        "attack": 1,
-        "element": "light",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 62,
-        "name": "Lahinx",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 63,
-        "name": "Lamuieires",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 64,
-        "name": "Leshi",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 65,
-        "name": "Leshyampa",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 66,
-        "name": "Lorochis",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 67,
-        "name": "Makasque",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 68,
-        "name": "Malavee",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 69,
-        "name": "Manguarog",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 70,
-        "name": "Manshy",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 71,
-        "name": "Mapin",
-        "attack": 1,
-        "element": "light",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 72,
-        "name": "Mateshi",
-        "attack": 1,
-        "element": "light",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 73,
-        "name": "Matormui",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 74,
-        "name": "Mazupire",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 75,
-        "name": "Mokappa",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 76,
-        "name": "Nakalavee",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 77,
-        "name": "Namantaras",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 78,
-        "name": "Pukwuda",
-        "attack": 1,
-        "element": "light",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 79,
-        "name": "Qilinates",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 80,
-        "name": "Quelukwuda",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 81,
-        "name": "Queshi",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 82,
-        "name": "Quetzus",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 83,
-        "name": "Selpie",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 84,
-        "name": "Tadorokal",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 85,
-        "name": "Tadze",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 86,
-        "name": "Tarasil",
-        "attack": 1,
-        "element": "light",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 87,
-        "name": "Tarisie",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 88,
-        "name": "Tesheires",
-        "attack": 1,
-        "element": "normal",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 89,
-        "name": "Thecan",
-        "attack": 1,
-        "element": "fire",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 90,
-        "name": "Thullinx",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 91,
-        "name": "Thupishee",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 92,
-        "name": "Tikie",
-        "attack": 1,
-        "element": "grass",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 93,
-        "name": "Yackasus",
-        "attack": 1,
-        "element": "water",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 94,
-        "name": "Yamang",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
-    },
-    {
-        "id": 95,
-        "name": "Yangdra",
-        "attack": 1,
-        "element": "dark",
-        "workSuitability": [
-            {
-                "mining": 0,
-                "woodcutting": 0,
-                "farming": 0,
-                "fire": 0
-            }
-        ]
+      "id": 1,
+      "name": "flambe",
+      "attack": 1,
+      "element": "fire",
+      "image": "01-flambe-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "leavie",
+      "attack": 1,
+      "element": "grass",
+      "image": "02-leavie-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 1,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "droplett",
+      "attack": 1,
+      "element": "water",
+      "image": "03-droplett-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 1,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "sandyum",
+      "attack": 1,
+      "element": "neutral",
+      "image": "04-sandyum-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 1,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "darkime",
+      "attack": 1,
+      "element": "dark",
+      "image": "05-darkime-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "holyight",
+      "attack": 1,
+      "element": "light",
+      "image": "06-holyight-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "magmor",
+      "attack": 1,
+      "element": "fire",
+      "image": "07-magmor-fire.png",
+      "workSuitability": [
+        {
+          "mining": 1,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "leamantis",
+      "attack": 1,
+      "element": "grass",
+      "image": "08-leamantis-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 1,
+          "farming": 1,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "driplett",
+      "attack": 1,
+      "element": "water",
+      "image": "09-driplett-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 2,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "graund",
+      "attack": 1,
+      "element": "neutral",
+      "image": "10-graund-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 2,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "darkraven",
+      "attack": 1,
+      "element": "dark",
+      "image": "11-darkraven-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 1,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "luceras",
+      "attack": 1,
+      "element": "light",
+      "image": "12-luceras-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 1,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "fennic",
+      "attack": 1,
+      "element": "fire",
+      "image": "13-fennic-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 2
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "lizzon",
+      "attack": 1,
+      "element": "grass",
+      "image": "14-lizzon-grass.png",
+      "workSuitability": [
+        {
+          "mining": 1,
+          "woodcutting": 1,
+          "farming": 1,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "rivule",
+      "attack": 1,
+      "element": "water",
+      "image": "15-rivule-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "sanditt",
+      "attack": 1,
+      "element": "neutral",
+      "image": "16-sanditt-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "impon",
+      "attack": 1,
+      "element": "dark",
+      "image": "17-impon-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "vitos",
+      "attack": 1,
+      "element": "light",
+      "image": "18-vitos-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "incawhisp",
+      "attack": 1,
+      "element": "fire",
+      "image": "19-incawhisp-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "lanche",
+      "attack": 1,
+      "element": "grass",
+      "image": "20-lanche-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "azuris",
+      "attack": 1,
+      "element": "water",
+      "image": "21-azuris-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "rhinocerops",
+      "attack": 1,
+      "element": "neutral",
+      "image": "22-rhinocerops-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "leuko",
+      "attack": 1,
+      "element": "dark",
+      "image": "23-leuko-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "eros",
+      "attack": 1,
+      "element": "light",
+      "image": "24-eros-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "salamandra",
+      "attack": 1,
+      "element": "fire",
+      "image": "25-salamandra-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "avalan",
+      "attack": 1,
+      "element": "grass",
+      "image": "26-avalan-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "krakelin",
+      "attack": 1,
+      "element": "water",
+      "image": "27-krakelin-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "rockstor",
+      "attack": 1,
+      "element": "neutral",
+      "image": "28-rockstor-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "noctuwhisp",
+      "attack": 1,
+      "element": "dark",
+      "image": "29-noctuwhisp-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "purisp",
+      "attack": 1,
+      "element": "light",
+      "image": "30-purisp-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "flamajor",
+      "attack": 1,
+      "element": "fire",
+      "image": "31-flamajor-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "planteeth",
+      "attack": 1,
+      "element": "grass",
+      "image": "32-planteeth-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "kappagon",
+      "attack": 1,
+      "element": "water",
+      "image": "33-kappagon-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "lutu",
+      "attack": 1,
+      "element": "neutral",
+      "image": "34-lutu-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "vilis",
+      "attack": 1,
+      "element": "dark",
+      "image": "35-vilis-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "gallantdrop",
+      "attack": 1,
+      "element": "light",
+      "image": "36-gallantdrop-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "flamage",
+      "attack": 1,
+      "element": "fire",
+      "image": "37-flamage-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "cacteon",
+      "attack": 1,
+      "element": "grass",
+      "image": "38-cacteon-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "vapos",
+      "attack": 1,
+      "element": "water",
+      "image": "39-vapos-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "bulder",
+      "attack": 1,
+      "element": "neutral",
+      "image": "40-bulder-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "cimmeris",
+      "attack": 1,
+      "element": "dark",
+      "image": "41-cimmeris-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "solas",
+      "attack": 1,
+      "element": "light",
+      "image": "42-solas-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "tigross",
+      "attack": 1,
+      "element": "fire",
+      "image": "43-tigross-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "thornton",
+      "attack": 1,
+      "element": "grass",
+      "image": "44-thornton-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "typhos",
+      "attack": 1,
+      "element": "water",
+      "image": "45-typhos-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "spiristone",
+      "attack": 1,
+      "element": "neutral",
+      "image": "46-spiristone-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "cyclopus",
+      "attack": 1,
+      "element": "dark",
+      "image": "47-cyclopus-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "whisper",
+      "attack": 1,
+      "element": "light",
+      "image": "48-whisper-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "feathor",
+      "attack": 1,
+      "element": "fire",
+      "image": "49-feathor-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "treeny",
+      "attack": 1,
+      "element": "grass",
+      "image": "50-treeny-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "hydragon",
+      "attack": 1,
+      "element": "water",
+      "image": "51-hydragon-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "stonotaurus",
+      "attack": 1,
+      "element": "neutral",
+      "image": "52-stonotaurus-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "narchis",
+      "attack": 1,
+      "element": "dark",
+      "image": "53-narchis-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "gallantisp",
+      "attack": 1,
+      "element": "light",
+      "image": "54-gallantisp-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "charcoalem",
+      "attack": 1,
+      "element": "fire",
+      "image": "55-charcoalem-fire.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "behement",
+      "attack": 1,
+      "element": "grass",
+      "image": "56-behement-grass.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "talis",
+      "attack": 1,
+      "element": "water",
+      "image": "57-talis-water.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "drakon",
+      "attack": 1,
+      "element": "neutral",
+      "image": "58-drakon-neutral.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "veilios",
+      "attack": 1,
+      "element": "dark",
+      "image": "59-veilios-dark.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "beakin",
+      "attack": 1,
+      "element": "light",
+      "image": "60-beakin-light.png",
+      "workSuitability": [
+        {
+          "mining": 0,
+          "woodcutting": 0,
+          "farming": 0,
+          "fire": 0
+        }
+      ]
     }
-]
+  ]

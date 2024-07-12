@@ -1,42 +1,47 @@
 [
     {
         "id": 0,
-        "name": "Wood"
+        "name": "Wood",
+        "gatherTicks": 1
     },
     {
         "id": 1,
-        "name": "Stone"
+        "name": "Stone",
+        "gatherTicks": 3
     },
     {
         "id": 2,
-        "name": "Berries"
+        "name": "Berries",
+        "gatherTicks": 1
     },
     {
         "id": 3,
-        "name": "Ore"
+        "name": "Ore",
+        "gatherTicks": 5
     },
     {
         "id": 4,
-        "name": "Coal"
+        "name": "Coal",
+        "gatherTicks": 6
     },
     {
         "id": 5,
-        "name": "Crystal"
+        "name": "Crystal",
+        "gatherTicks": 6
     },
     {
         "id": 6,
-        "name": "Coal"
+        "name": "Sulfur",
+        "gatherTicks": 10
     },
     {
         "id": 7,
-        "name": "Sulfur"
+        "name": "Iron",
+        "gatherTicks": 10
     },
     {
         "id": 8,
-        "name": "Iron"
-    },
-    {
-        "id": 9,
-        "name": "Steel"
+        "name": "Steel",
+        "gatherTicks": 10
     }
 ]

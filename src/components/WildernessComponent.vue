@@ -68,6 +68,7 @@
     import locationsData from "@/assets/tables/locations.json";
     import resourceData from "@/assets/tables/resources.json";
     import monstersData from "@/assets/tables/monsters.json";
+    import itemData from "@/assets/tables/items.json";
     import BattleComponent from './BattleComponent.vue' // eslint-disable-line
 
 
@@ -79,11 +80,12 @@
         data: () => ({
             locations: locationsData,
             resources: resourceData,
+            items: itemData,
             selectedLocation: null,
             snackbar: false,
             text: '',
             timeout: 2000,
-            stoneCount: 0,
+            tickCount: 0,
             activeMonster: null,
         }),
         methods: {
@@ -102,26 +104,31 @@
                         return;
                     }
                 }
-                //check if resource is stone
-                if (resource == 1) {
-                    //check if player has pickaxe
-                    if (!this.playerItemInventory.find(x => x.id == 0)) {
-                        this.stoneCount++;
-                        if(this.stoneCount == 3) {
-                            //add stone to inventory
-                            this.$store.commit('addResourceToInventory', { id: 1, quantity: 1 })
-                            this.text = `You gathered ${this.resources.find(x => x.id == resource).name} but you need a pickaxe to gather more efficiently.`
-                            this.snackbar = true
-                            this.stoneCount = 0;
-                            return;
-                        }
-                    }
+                let playerHasGatherItem = false;
+                if(this.resources.find(x => x.id == resource).gatherItem == "none"){
+                    playerHasGatherItem = true;
+                } else if(this.playerItemInventory.find(x => x.id == this.resources.find(x => x.id == resource).gatherItem)){
+                    playerHasGatherItem = true;
                 }
-                if(resource == 0) {
-                    //add wood to inventory
-                    this.$store.commit('addResourceToInventory', { id: 0, quantity: 1 });
-                    this.text = `You gathered ${this.resources.find(x => x.id == resource).name} but you need an axe to gather more efficiently.`
+                if(playerHasGatherItem){
+                    this.tickCount += 2;
+                } else {
+                    this.tickCount++;
+                }
+                if(this.tickCount >= this.resources.find(x => x.id == resource).gatherTicks) {
+                    this.tickCount = 0;
+                    this.$store.commit('addResourceToInventory', { id: resource, quantity: 1 });
+                    if(this.resources.find(x => x.id == resource).gatherItem == "none"){
+                        this.text = `You obtained ${this.resources.find(x => x.id == resource).name}.`
+                    } else if(playerHasGatherItem){
+                        this.text = `You obtained ${this.resources.find(x => x.id == resource).name}.`
+                    } else {
+                        this.text = `You obtained ${this.resources.find(x => x.id == resource).name}. Craft a ${this.items.find(x => x.id == this.resources.find(x => x.id == resource).gatherItem).name} to gather more efficiently.`
+
+                    }
                     this.snackbar = true
+                    this.tickCount = 0;
+                    return;
                 }
             },
             huntMonsters(){

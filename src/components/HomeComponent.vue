@@ -149,7 +149,7 @@
                                   outlined
                                   rounded
                                   small
-                                  @click="buildTech(item)"
+                                  @click="buildItem(item)"
                                   >
                                   Build
                                </v-btn>
@@ -220,6 +220,25 @@
                 }
                 this.text = 'Tech built successfully.';
                 this.snackbar = true;
+            },
+            buildItem(item){
+               item.requiredResources.forEach(resource => {
+                    if(this.playerInventory.find(x => x.id == resource.id)){
+                        if(this.playerInventory.find(x => x.id == resource.id).quantity < resource.quantity){
+                            this.text = 'You do not have enough resources to build this.';
+                            this.snackbar = true;
+                            return;
+                        }
+                    } else {
+                        this.text = 'You do not have enough resources to build this.';
+                        this.snackbar = true;
+                        return;
+                    }
+                });
+               item.requiredResources.forEach(resource => {
+                  this.$store.commit('removeResourceFromInventory', resource);
+               });
+               this.$store.dispatch('addItemToInventory', item);
             },
             generateGuid() {
                 const s4 = () => {

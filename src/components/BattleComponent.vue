@@ -28,7 +28,7 @@
                 <v-btn @click="attack" width="100%">Attack</v-btn>
               </v-col>
               <v-col cols="6" class="text-center">
-                <v-btn @click="useItem" width="100%">Item</v-btn>
+                <v-btn @click="showInventory = true" width="100%">Item</v-btn>
               </v-col>
               <v-col cols="6" class="text-center">
                 <v-btn @click="swap" width="100%">Swap</v-btn>
@@ -48,9 +48,19 @@
               min-height="70vh"
               rounded="lg"
             >
-            <v-row class="mx-2">
+            <v-row class="mx-2" v-if="!showInventory">
               <v-col cols="12" class="text-center">
                 <p v-for="(message, i) in battleProgress" :key="i">{{ message }}</p>
+              </v-col>
+            </v-row>
+            <v-row v-if="showInventory">
+              <v-col cols="3" v-for="item in playerItemInventory" :key="item.id">
+                <v-card>
+                    <v-card-title>{{ resources.find(x => x.id == item.id).name }}</v-card-title>
+                    <v-card-subtitle>{{ item.quantity }}</v-card-subtitle>
+                    <v-img :src="require(`@/assets/resources/${convertToCamelCase(resources.find(x => x.id == item.id).name)}.png`)" />
+                    <v-btn color="success" @click="useItem(item)">Use</v-btn>
+                </v-card>
               </v-col>
             </v-row>
             </v-sheet>
@@ -99,6 +109,7 @@
             playerMonster: null,
             fleeAttempts: 0,
             battleProgress: [],
+            showInventory: false
         }),
         methods: {
           commitPlayerMonsterHP(monster){
@@ -110,7 +121,12 @@
           swap(){
             this.battleProgress.push(`You swapped monsters!`);
           },
-          attack(){
+          attack(playerAttacked){
+            if(playerAttacked){
+              this.battleProgress.push(`You attacked the enemy!`);
+            } else {
+              this.battleProgress.push(`The enemy attacked you!`);
+            }
             let playerDamage = this.calculateDamage(this.playerMonster, this.enemy);
             this.enemyCurrentHP -= playerDamage;
             this.battleProgress.push(`You dealt ${playerDamage} damage to the enemy!`);

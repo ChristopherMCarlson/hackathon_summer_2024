@@ -81,11 +81,11 @@ import IntroComponent from './components/IntroComponent.vue'
             icon: 'wilderness',
             component: Wilderness,
           },
-          {
-            label: 'Encyclopedia',
-            icon: 'encyclopedia',
-            component: Encyclopedia,
-          },
+          // {
+          //   label: 'Encyclopedia',
+          //   icon: 'encyclopedia',
+          //   component: Encyclopedia,
+          // },
         ]
       }),
       computed: {

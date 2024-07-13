@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-row class="justify-center mt-5">
-                    <v-col cols="2" v-for="monster in activeTeam" :key="monster.uniqueId">
+                    <v-col cols="3" v-for="monster in activeTeam" :key="monster.uniqueId">
                         <v-card>
                             <v-row class="justify-center">
                                 <v-col cols="12" class="text-center">

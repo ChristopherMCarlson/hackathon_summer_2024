@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-row v-if="selectedLocation == null && activeMonster == null" class="justify-space-around">
-            <v-col cols="2" v-for="location in locations" :key="location.name">
+            <v-col cols="4" v-for="location in locations" :key="location.name">
                 <v-card>
                     <v-card-title>{{ location.name }}</v-card-title>
                     <v-card-subtitle>Recommended Level: {{ location.minLevel }} - {{ location.maxLevel }}</v-card-subtitle>
@@ -18,7 +18,7 @@
             <v-col cols="12" class="text-center">
                 <v-btn text @click="selectedLocation = null" color="red">Leave</v-btn>
             </v-col>
-            <v-col cols="2" v-for="resource in selectedLocation.resources" :key="resource">
+            <v-col cols="3" v-for="resource in selectedLocation.resources" :key="resource">
                 <v-card>
                     <v-card-title>Gather {{ resources.find(x => x.id == resource).name }}</v-card-title>
                     <v-card-text>
@@ -29,7 +29,7 @@
                     </v-card-actions>
                 </v-card>
             </v-col>
-            <v-col cols="2">
+            <v-col cols="3">
                 <v-card>
                     <v-card-title>Hunt Monsters</v-card-title>
                     <v-card-text>

@@ -56,6 +56,13 @@ export default new Vuex.Store({
       if(state.playerMonstersTeam.length < 7) {
         state.playerMonstersTeam.push(monster);
       }
+    },
+    addItemToInventory(state, item) {
+      if(state.playerItemInventory.find(i => i.id === item.id)) {
+        state.playerItemInventory.find(i => i.id === item.id).quantity++;
+      } else {
+        state.playerItemInventory.push(item);
+      }
     }
   },
   actions: {
@@ -76,6 +83,9 @@ export default new Vuex.Store({
     },
     captureMonster(store, monster) {
       store.commit('captureMonster', monster);
+    },
+    addItemToInventory(store, item) {
+      store.commit('addItemToInventory', item);
     }
   },
   modules: {

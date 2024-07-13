@@ -1,12 +1,20 @@
 <template>
     <v-container>
-        <v-row v-if="playerInventory.length > 0">
-            <v-col cols="1" v-for="item in playerInventory" :key="item.id">
+        <v-row v-if="playerResourceInventory.length > 0">
+            <v-col cols="2" v-for="item in playerResourceInventory" :key="item.id">
                 <v-card>
                     <v-card-title>{{ resources.find(x => x.id == item.id).name }}</v-card-title>
                     <v-card-subtitle>{{ item.quantity }}</v-card-subtitle>
                     <v-img :src="require(`@/assets/resources/${convertToCamelCase(resources.find(x => x.id == item.id).name)}.png`)" />
-                    <v-btn color="error" text>Drop</v-btn>
+                    <!-- <v-btn color="error" text>Drop</v-btn> -->
+                </v-card>
+            </v-col>
+            <v-col cols="2" v-for="item in playerItemInventory" :key="item.id">
+                <v-card>
+                    <v-card-title>{{ items.find(x => x.id == item.id).name }}</v-card-title>
+                    <v-card-subtitle>{{ item.quantity }}</v-card-subtitle>
+                    <v-img :src="require(`@/assets/items/${convertToCamelCase(items.find(x => x.id == item.id).name)}.png`)" />
+                    <!-- <v-btn color="error" text>Drop</v-btn> -->
                 </v-card>
             </v-col>
         </v-row>
@@ -20,11 +28,13 @@
 
 <script>
     import resourcesData from "@/assets/tables/resources.json";
+    import itemsData from "@/assets/tables/items.json";
 
     export default {
         name: 'InventoryComponent',
         data: () => ({
             resources: resourcesData,
+            items: itemsData
         }),
         methods: {
             convertToCamelCase(str) {
@@ -35,8 +45,11 @@
             },
         },
         computed: {
-            playerInventory() {
-                return this.$store.state.playerResourceInventory.concat(this.$store.state.playerItemInventory);
+            playerResourceInventory() {
+                return this.$store.state.playerResourceInventory;
+            },
+            playerItemInventory() {
+                return this.$store.state.playerItemInventory;
             }
         }
     }

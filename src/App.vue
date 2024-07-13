@@ -37,7 +37,8 @@
     </v-app-bar>
 
     <v-main>
-      <component :is="activeComponent.component" />
+      <intro-component v-if="!introComplete" />
+      <component v-if="introComplete" :is="activeComponent.component" />
     </v-main>
   </v-app>
 </template>
@@ -48,14 +49,17 @@
   import Wilderness from './components/WildernessComponent.vue' // eslint-disable-line
   import Encyclopedia from './components/EncyclopediaComponent.vue' // eslint-disable-line
   import Inventory from './components/InventoryComponent.vue' // eslint-disable-line
+  import Intro from './components/IntroComponent.vue' // eslint-disable-line
+import IntroComponent from './components/IntroComponent.vue'
   export default {
+  components: { IntroComponent },
     data: () => ({
       drawer: true,
       activeComponent: {
-          label: 'Base',
-          icon: 'base',
-          component: Home,
-        },
+            label: 'Wilderness',
+            icon: 'wilderness',
+            component: Wilderness,
+          },
         components: [
           {
             label: 'Base',
@@ -87,6 +91,9 @@
       computed: {
         tutorialObjetives(){
           return this.$store.state.tutorialObjectives;
+        },
+        introComplete(){
+          return this.$store.state.introComplete;
         }
       }
   }

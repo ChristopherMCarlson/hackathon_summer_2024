@@ -2,12 +2,15 @@
     {
         "id": 0,
         "name": "Pickaxe",
+        "image": "pickaxe.png",
         "requiredResources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 10
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 5
             }
@@ -16,12 +19,15 @@
     {
         "id": 1,
         "name": "Axe",
+        "image": "axe.png",
         "requiredResources": [
             {
+                "id": 0,
                 "name": "Wood",
                 "quantity": 5
             },
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 5
             }
@@ -29,13 +35,16 @@
     },
     {
         "id": 2,
+        "image": "blueConduit.png",
         "name": "Blue Conduit",
         "requiredResources": [
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 5
             },
             {
+                "id": 5,
                 "name": "Crystal",
                 "quantity": 5
             }
@@ -43,13 +52,16 @@
     },
     {
         "id": 3,
+        "image": "redConduit.png",
         "name": "Red Conduit",
         "requiredResources": [
             {
+                "id": 1,
                 "name": "Stone",
                 "quantity": 20
             },
             {
+                "id": 5,
                 "name": "Crystal",
                 "quantity": 30
             }
@@ -57,13 +69,16 @@
     },
     {
         "id": 4,
+        "image": "yellowConduit.png",
         "name": "Yellow Conduit",
         "requiredResources": [
             {
+                "id": 1,
                 "name": "Iron",
                 "quantity": 20
             },
             {
+                "id": 5,
                 "name": "Crystal",
                 "quantity": 100
             }
@@ -71,9 +86,11 @@
     },
     {
         "id": 5,
+        "image": "redMedicine.png",
         "name": "Red Medicine",
         "requiredResources": [
             {
+                "id": 2,
                 "name": "Berries",
                 "quantity": 5
             }
@@ -81,13 +98,16 @@
     },
     {
         "id": 6,
+        "image": "blueMedicine.png",
         "name": "Blue Medicine",
         "requiredResources": [
             {
+                "id": 2,
                 "name": "Berries",
                 "quantity": 10
             },
             {
+                "id": 5,
                 "name": "Crystal",
                 "quantity": 5
             }
@@ -95,17 +115,21 @@
     },
     {
         "id": 7,
+        "image": "yellowMedicine.png",
         "name": "Yellow Medicine",
         "requiredResources": [
             {
+                "id": 2,
                 "name": "Berries",
                 "quantity": 50
             },
             {
+                "id": 5,
                 "name": "Crystal",
                 "quantity": 15
             },
             {
+                "id": 6,
                 "name": "Sulfur",
                 "quantity": 5
             }

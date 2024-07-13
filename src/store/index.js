@@ -20,6 +20,7 @@ export default new Vuex.Store({
       "Craft a conduit to capture monsters on a workbench",
       "Capture a monster in the peaceful woods",
     ],
+    introComplete: false,
   },
   getters: {
   },
@@ -46,6 +47,15 @@ export default new Vuex.Store({
     },
     completeTutorialObjective(state, objective) {
       state.tutorialObjectives.splice(state.tutorialObjectives.indexOf(objective), 1);
+    },
+    completeIntro(state) {
+      state.introComplete = true;
+    },
+    captureMonster(state, monster) {
+      state.capturedMonsters.push(monster);
+      if(state.playerMonstersTeam.length < 7) {
+        state.playerMonstersTeam.push(monster);
+      }
     }
   },
   actions: {
@@ -60,6 +70,12 @@ export default new Vuex.Store({
     },
     completeTutorialObjective(store, objective) {
       store.commit('completeTutorialObjective', objective);
+    },
+    completeIntro(store) {
+      store.commit('completeIntro');
+    },
+    captureMonster(store, monster) {
+      store.commit('captureMonster', monster);
     }
   },
   modules: {

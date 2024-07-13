@@ -82,6 +82,8 @@
 
 <script>
     import monstersData from "@/assets/tables/monsters.json";
+    import itemsData from "@/assets/tables/items.json";
+    import resoucesData from "@/assets/tables/resources.json";
 
     export default {
         name: 'BattleComponent',
@@ -90,6 +92,8 @@
         },
         data: () => ({
             monsters: monstersData,
+            items: itemsData,
+            resources: resoucesData,
             enemyCurrentHP: 0,
             enemy: null,
             playerMonster: null,
@@ -112,14 +116,14 @@
             this.battleProgress.push(`You dealt ${playerDamage} damage to the enemy!`);
             if(this.enemyCurrentHP <= 0){
               this.battleProgress.push(`You defeated the enemy!`);
-              this.$emit('win', this.enemy);
+              this.$emit('endEncounter', this.enemy);
             } else {
               let enemyDamage = this.calculateDamage(this.enemy, this.playerMonster);
               this.playerMonster.currentHP -= enemyDamage;
               this.battleProgress.push(`The enemy dealt ${enemyDamage} damage to you!`);
               if(this.playerMonster.currentHP <= 0){
                 this.battleProgress.push(`You were defeated!`);
-                this.$emit('lose');
+                this.$emit('endEncounter');
               }
             }
             // this.commitPlayerMonsterHP(this.playerMonster);
@@ -148,17 +152,33 @@
           flee(){
             if(this.playerMonster.calculatedStats.speed > this.enemy.calculatedStats.speed){
               this.battleProgress.push(`You fled successfully!`);
-              this.$emit('flee');
+              this.$emit('endEncounter');
             } else {
               let randomModifier = Math.floor(Math.random() * 256);
               let fleeChance = Math.floor((this.playerMonster.calculatedStats.speed * 128) / this.enemy.calculatedStats.speed + 30 * this.fleeAttempts) % 256;
               if(fleeChance > randomModifier){
                 this.battleProgress.push(`You fled successfully!`);
-                this.$emit('flee');
+                this.$emit('endEncounter');
               } else {
                 this.battleProgress.push(`You couldn't flee!`);
                 this.fleeAttempts++;
               }
+            }
+          },
+          capture(conduit){
+            let conduitMultiplier = 1;
+            let randomNum = Math.floor(Math.random() * 256);
+            if(conduit.id == 3){
+              conduitMultiplier = 1.5;
+            } else if(conduit.id == 4){
+              conduitMultiplier = 2;
+            }
+            let successRate = Math.floor((this.enemy.maxHP * 255 / 4) / this.enemy.currentHP * conduitMultiplier);
+            if(successRate > randomNum){
+              this.battleProgress.push(`You captured the enemy!`);
+              this.$emit('endEncounter', this.enemy);
+            } else {
+              this.battleProgress.push(`The enemy broke free!`);
             }
           },
           generateGuid() {
@@ -173,6 +193,9 @@
         computed: {
           playerMonsters() {
             return this.$store.state.playerMonstersTeam;
+          },
+          playerInventory() {
+            return this.$store.state.playerItemInventory;
           }
         },
         beforeMount(){

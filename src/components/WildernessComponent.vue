@@ -42,7 +42,7 @@
             </v-col>
         </v-row>
         <v-row v-if="selectedLocation != null && activeMonster != null">
-            <BattleComponent :monster="activeMonster" />
+            <BattleComponent :monster="activeMonster" @endEncounter="endEncounter" />
         </v-row>
         <v-snackbar
             v-model="snackbar"
@@ -89,6 +89,10 @@
             activeMonster: null,
         }),
         methods: {
+            endEncounter() {
+                console.log("Ending encounter");
+                this.activeMonster = null;
+            },
             convertToCamelCase(str) {
                 return str.split(/[^a-zA-Z0-9]/g).map((x, index) => {
                     if (index === 0) return x.toLowerCase()

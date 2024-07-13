@@ -137,9 +137,13 @@
                 }
             },
             huntMonsters(){
-                //select a random monster from the available encounters in a location
-                const randomMonsterIndex = Math.floor(Math.random() * this.selectedLocation.encounters.length);
-                let randomMonster = monstersData.find(x => x.id == this.selectedLocation.encounters[randomMonsterIndex]);
+                let randomMonster = null;
+                // 10% chance to find a rare encounter
+                if (Math.random() < 0.1) {
+                    randomMonster = monstersData.find(x => x.id == this.selectedLocation.rareEncounters[Math.floor(Math.random() * this.selectedLocation.rareEncounters.length)]);
+                } else {
+                    randomMonster = monstersData.find(x => x.id == this.selectedLocation.encounters[Math.floor(Math.random() * this.selectedLocation.encounters.length)]);
+                }
                 //create a level for the monster based on location level range
                 randomMonster.level = Math.floor(Math.random() * (this.selectedLocation.maxLevel - this.selectedLocation.minLevel + 1)) + this.selectedLocation.minLevel;
                 // Use the randomMonster for further processing

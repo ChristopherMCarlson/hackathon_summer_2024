@@ -5,7 +5,7 @@
                         <v-card>
                             <v-row class="justify-center">
                                 <v-col cols="12" class="text-center">
-                                    <h3>{{ monster.name.charAt(0).toUpperCase() + monster.name.slice(1) }}</h3>
+                                    <h3>{{ monster.name }}</h3>
                                 </v-col>
                                 <v-col cols="12">
                                     <v-img :src="require(`@/assets/monsters/${monster.image}.png`)" />

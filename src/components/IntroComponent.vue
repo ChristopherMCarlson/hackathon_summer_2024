@@ -52,7 +52,22 @@
             selectMonster(monster) {
                 let selectedMonster = JSON.parse(JSON.stringify(monster));
                 selectedMonster.uniqueId = this.generateGuid();
-                selectedMonster.level = 1;
+                selectedMonster.level = 5;
+                selectedMonster.exp = 0;
+                selectedMonster.randomModifiers = {
+                    attack: Math.floor(Math.random() * 16),
+                    defense: Math.floor(Math.random() * 16),
+                    speed: Math.floor(Math.random() * 16),
+                    hp: Math.floor(Math.random() * 16)
+                }
+                selectedMonster.calculatedStats = {
+                    attack: Math.max(5, Math.floor(((selectedMonster.randomModifiers.attack + selectedMonster.stats.Attack * 2 / 4) * selectedMonster.level / 100 + 5))),
+                    defense: Math.max(5, Math.floor(((selectedMonster.randomModifiers.defense + selectedMonster.stats.Defense * 2 / 4) * selectedMonster.level / 100 + 5))),
+                    speed: Math.max(5, Math.floor(((selectedMonster.randomModifiers.speed + selectedMonster.stats.Speed * 2 / 4) * selectedMonster.level / 100 + 5))),
+                    hp: Math.max(11, Math.floor((selectedMonster.randomModifiers.hp + selectedMonster.stats.HP * 2 / 4) * selectedMonster.level / 100 + 10 + selectedMonster.level))
+                }
+                selectedMonster.currentHP = selectedMonster.calculatedStats.hp;
+                selectedMonster.maxHP = selectedMonster.calculatedStats.hp;
                 this.$store.commit('captureMonster', selectedMonster);
                 this.introStep++;
             },

@@ -96,13 +96,12 @@
                 }).join('')
             },
             gatherResource(resource) {
-                //check if the player has either a conduit or a monster
-                if(this.playerItemInventory.find(x => x.id == 2) || this.playerMonsterTeam > 0) {
-                    // 10% chance to enter huntMonsters function
-                    if (Math.random() < 0.1) {
-                        this.huntMonsters();
-                        return;
-                    }
+                let monsterEncounter = Math.random();
+                // 25% chance to enter huntMonsters function
+                if (monsterEncounter < 0.25) {
+                    console.log("Hunting monsters");
+                    this.huntMonsters();
+                    return;
                 }
                 let playerHasGatherItem = false;
                 if(this.resources.find(x => x.id == resource).gatherItem == "none"){
@@ -138,14 +137,26 @@
             },
             huntMonsters(){
                 let randomMonster = null;
+                let monsterEncounterId = null;
                 // 10% chance to find a rare encounter
                 if (Math.random() < 0.1) {
-                    randomMonster = monstersData.find(x => x.id == this.selectedLocation.rareEncounters[Math.floor(Math.random() * this.selectedLocation.rareEncounters.length)]);
+                    console.log("Rare encounter");
+                    monsterEncounterId = this.selectedLocation.rareEncounters[Math.floor(Math.random() * this.selectedLocation.rareEncounters.length)];
+                    console.log(monsterEncounterId);
+                    randomMonster = JSON.parse(JSON.stringify(monstersData.find(x => x.id == monsterEncounterId)));
                 } else {
-                    randomMonster = monstersData.find(x => x.id == this.selectedLocation.encounters[Math.floor(Math.random() * this.selectedLocation.encounters.length)]);
+                    console.log("Normal encounter");
+                    monsterEncounterId = this.selectedLocation.encounters[Math.floor(Math.random() * this.selectedLocation.encounters.length)];
+                    console.log(monsterEncounterId);
+                    randomMonster = JSON.parse(JSON.stringify(monstersData.find(x => x.id == monsterEncounterId)));
                 }
                 //create a level for the monster based on location level range
-                randomMonster.level = Math.floor(Math.random() * (this.selectedLocation.maxLevel - this.selectedLocation.minLevel + 1)) + this.selectedLocation.minLevel;
+                console.log(randomMonster)
+                if(this.selectedLocation.maxLevel == this.selectedLocation.minLevel){
+                    randomMonster.level = this.selectedLocation.maxLevel;
+                } else {
+                    randomMonster.level = Math.floor(Math.random() * (this.selectedLocation.maxLevel - this.selectedLocation.minLevel + 1)) + this.selectedLocation.minLevel;
+                }
                 // Use the randomMonster for further processing
                 this.activeMonster = randomMonster;
             }

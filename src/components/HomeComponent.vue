@@ -184,9 +184,19 @@
         },
         methods: {
             open(tech) {
-                console.log(tech);
-                this.dialog = true;
-                this.activeTech = tech;
+               console.log(tech.name);
+               if(tech.name == 'Stone Quarry'){
+                  this.$store.commit('addResourceToInventory', {id: 1, quantity: 1});
+                  this.snackbar = true
+                  this.text = 'Stone added to inventory.';
+               } else if (tech.name == 'Logging Site'){
+                  this.$store.commit('addResourceToInventory', {id: 0, quantity: 1});
+                  this.snackbar = true
+                  this.text = 'Wood added to inventory.';
+               } else if (tech.name == 'Workbench'){
+                  this.dialog = true;
+                  this.activeTech = tech;
+               }
             },
             checkInventory(resource) {
                 if(this.playerInventory.find(x => x.id == resource.id)){

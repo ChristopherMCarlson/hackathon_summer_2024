@@ -246,6 +246,9 @@
             let successRate = Math.floor((this.enemy.maxHP * 255 / 4) / this.enemy.currentHP * conduitMultiplier);
             if(successRate > randomNum){
               this.battleProgress.push(`You captured the enemy!`);
+              if(this.$store.state.tutorialObjectives.includes("Capture a monster in the peaceful woods")){
+                   this.$store.commit('completeTutorialObjective', "Capture a monster in the peaceful woods");
+               }
               this.$store.commit('captureMonster', this.enemy);
               this.encounterEnded = true;
             } else {

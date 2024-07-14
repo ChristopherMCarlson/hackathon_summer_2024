@@ -19,7 +19,7 @@
           <v-list-item-title>{{ component.label }}</v-list-item-title>
         </v-list-item>
       </v-list>
-      <v-list class="mt-5">
+      <v-list class="mt-5" v-if="tutorialObjetives.length > 0">
         <v-list-item>
           <p style="color: #00FFFF">OBJECTIVES:</p>
         </v-list-item>

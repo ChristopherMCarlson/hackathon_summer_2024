@@ -83,7 +83,10 @@ export default new Vuex.Store({
     },
     gainExperience(state, exp) {
       state.playerMonstersTeam.forEach(monster => {
+        console.log(monster.exp);
+        console.log(exp);
         monster.exp += exp;
+        console.log(monster.exp);
         if(monster.exp >= Math.floor((4 * Math.pow(monster.level, 3)) / 5)) {
           monster.level++;
           monster.calculatedStats.hp += Math.floor(monster.stats.HP * (1/50));

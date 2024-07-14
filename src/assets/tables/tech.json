@@ -55,7 +55,7 @@
     },
     {
         "name": "Stone Quarry",
-        "description": "A stone quarry is used to allow monsters to produce stone.",
+        "description": "A stone quarry is used to allow gathering of stone peacefully.",
         "image": "stoneQuarry.png",
         "resources": [
             {
@@ -72,7 +72,7 @@
     },
     {
         "name": "Logging Site",
-        "description": "A logging site is used to allow monsters to produce wood.",
+        "description": "A logging site is used to allow gathering of wood peacefully.",
         "image": "loggingSite.png",
         "resources": [
             {
@@ -89,7 +89,7 @@
     },
     {
         "name": "Ore Mine",
-        "description": "An ore mine is used to allow monsters to produce ore.",
+        "description": "An ore mine is used to allow gathering of ore peacefully.",
         "image": "oreMine.png",
         "resources": [
             {
@@ -111,7 +111,7 @@
     },
     {
         "name": "Coal Mine",
-        "description": "A coal mine is used to allow monsters to produce coal.",
+        "description": "A coal mine is used to allow gathering of coal peacefully.",
         "image": "coalMine.png",
         "resources": [
             {
@@ -133,7 +133,7 @@
     },
     {
         "name": "Crystal Mine",
-        "description": "A crystal mine is used to allow monsters to produce crystal.",
+        "description": "A crystal mine is used to allow gathering of crystal peacefully.",
         "image": "crystalMine.png",
         "resources": [
             {

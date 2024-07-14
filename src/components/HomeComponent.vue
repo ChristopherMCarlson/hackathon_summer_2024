@@ -239,6 +239,9 @@
                   this.$store.commit('removeResourceFromInventory', resource);
                });
                this.$store.dispatch('addItemToInventory', item);
+               if(this.$store.state.tutorialObjectives.includes("Craft a conduit to capture monsters on a workbench") && item.id == 2){
+                   this.$store.commit('completeTutorialObjective', "Craft a conduit to capture monsters on a workbench");
+               }
             },
             generateGuid() {
                 const s4 = () => {

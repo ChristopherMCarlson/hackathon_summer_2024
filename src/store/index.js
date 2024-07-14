@@ -1,27 +1,31 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Cookies from 'js-cookie' // Add this line
+import { vuexCookie } from './vuexCookie';
 
 Vue.use(Vuex)
 
+const savedState = Cookies.get('vuexState') ? JSON.parse(Cookies.get('vuexState')) : {
+  playerResourceInventory: [],
+  playerItemInventory: [],
+  baseMonsters: [],
+  seenMonsters: [],
+  capturedMonsters: [],
+  playerMonsters: [],
+  playerMonstersTeam: [],
+  playerBase: [],
+  tutorialObjectives: [
+    "Chop down trees for wood in the peaceful woods",
+    "Build a workbench to craft items in your base",
+    "Mine for crystal in the peaceful woods",
+    "Craft a conduit to capture monsters on a workbench",
+    "Capture a monster in the peaceful woods",
+  ],
+  introComplete: false,
+};
+
 export default new Vuex.Store({
-  state: {
-    playerResourceInventory: [],
-    playerItemInventory: [],
-    baseMonsters: [],
-    seenMonsters: [],
-    capturedMonsters: [],
-    playerMonsters: [],
-    playerMonstersTeam: [],
-    playerBase: [],
-    tutorialObjectives: [
-      "Chop down trees for wood in the peaceful woods",
-      "Build a workbench to craft items in your base",
-      "Mine for crystal in the peaceful woods",
-      "Craft a conduit to capture monsters on a workbench",
-      "Capture a monster in the peaceful woods",
-    ],
-    introComplete: false,
-  },
+  state: savedState,
   getters: {
   },
   mutations: {
@@ -62,6 +66,19 @@ export default new Vuex.Store({
         state.playerItemInventory.find(i => i.id === item.id).quantity++;
       } else {
         state.playerItemInventory.push(item);
+        state.playerItemInventory.find(i => i.id === item.id).quantity = 1;
+      }
+    },
+    restoreMonsterHP(state) {
+      state.playerMonstersTeam.forEach(monster => {
+        monster.currentHP = monster.maxHP;
+      });
+    },
+    removeItemFromInventory(state, item) {
+      if(state.playerItemInventory.find(i => i.id === item.id)) {
+        state.playerItemInventory.find(i => i.id === item.id).quantity--;
+      } else {
+        console.log('Item not found');
       }
     }
   },
@@ -86,8 +103,15 @@ export default new Vuex.Store({
     },
     addItemToInventory(store, item) {
       store.commit('addItemToInventory', item);
+    },
+    restoreMonsterHP(store){
+      store.commit('restoreMonsterHP');
+    },
+    removeItemFromInventory(store, item) {
+      store.commit('removeItemFromInventory', item);
     }
   },
   modules: {
-  }
+  },
+  plugins: [vuexCookie]
 })

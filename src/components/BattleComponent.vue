@@ -23,18 +23,23 @@
               rounded="lg"
               class="mt-5 pa-2"
             >
-            <v-row class="justify-end">
+            <v-row class="justify-space-between" v-if="!encounterEnded">
               <v-col cols="6" class="text-center">
                 <v-btn @click="attack" width="100%">Attack</v-btn>
               </v-col>
               <v-col cols="6" class="text-center">
-                <v-btn @click="showInventory = true" width="100%">Item</v-btn>
+                <v-btn @click="openSubMenu('inventory')" width="100%">Item</v-btn>
               </v-col>
               <v-col cols="6" class="text-center">
-                <v-btn @click="swap" width="100%">Swap</v-btn>
+                <v-btn @click="openSubMenu('swap')" width="100%">Swap</v-btn>
               </v-col>
               <v-col cols="6" class="text-center">
                 <v-btn @click="flee" width="100%">Flee</v-btn>
+              </v-col>
+            </v-row>
+            <v-row class="justify-space-between" v-if="encounterEnded">
+              <v-col cols="12" class="text-center">
+                <v-btn @click="endEncounter" width="100%">Continue</v-btn>
               </v-col>
             </v-row>
             </v-sheet>
@@ -48,18 +53,34 @@
               min-height="70vh"
               rounded="lg"
             >
-            <v-row class="mx-2" v-if="!showInventory">
+            <v-row class="mx-2" v-if="!showInventory && !showSwap">
               <v-col cols="12" class="text-center">
                 <p v-for="(message, i) in battleProgress" :key="i">{{ message }}</p>
               </v-col>
             </v-row>
             <v-row v-if="showInventory">
-              <v-col cols="3" v-for="item in playerItemInventory" :key="item.id">
+              <v-col cols="3" v-for="item in playerInventory" :key="item.id">
                 <v-card>
-                    <v-card-title>{{ resources.find(x => x.id == item.id).name }}</v-card-title>
+                    <v-card-title>{{ items.find(x => x.id == item.id).name }}</v-card-title>
                     <v-card-subtitle>{{ item.quantity }}</v-card-subtitle>
-                    <v-img :src="require(`@/assets/resources/${convertToCamelCase(resources.find(x => x.id == item.id).name)}.png`)" />
-                    <v-btn color="success" @click="useItem(item)">Use</v-btn>
+                    <v-img :src="require(`@/assets/items/${convertToCamelCase(items.find(x => x.id == item.id).name)}.png`)" />
+                    <v-btn @click="useItem(item)">Use</v-btn>
+                </v-card>
+              </v-col>
+            </v-row>
+            <v-row v-if="showSwap">
+              <v-col cols="3" v-for="monster in playerMonsters" :key="monster.uniqueId">
+                <v-card>
+                    <v-card-title>{{ monster.name }}</v-card-title>
+                    <v-card-subtitle>Level: {{ monster.level }}</v-card-subtitle>
+                    <v-img :src="require(`@/assets/monsters/${monster.image}.png`)" />
+                    <h3>HP:</h3>
+                <v-progress-linear
+                  :value="Math.floor((monster.currentHP/monster.maxHP) * 100)"
+                  color="green"
+                  height="25"
+                ></v-progress-linear>
+                    <v-btn @click="swap(monster)">Swap</v-btn>
                 </v-card>
               </v-col>
             </v-row>
@@ -109,39 +130,59 @@
             playerMonster: null,
             fleeAttempts: 0,
             battleProgress: [],
-            showInventory: false
+            showInventory: false,
+            showSwap: false,
+            encounterEnded: false
         }),
         methods: {
           commitPlayerMonsterHP(monster){
             this.$store.commit('updateMonsterHP', {monster: monster, hp: monster.currentHP});
           },
-          useItem(){
-            this.battleProgress.push(`You used an item!`);
-          },
-          swap(){
+          swap(monster){
+            this.playerMonster = monster;
+            this.showSwap = false;
             this.battleProgress.push(`You swapped monsters!`);
+            this.trimBattleProgress();
+          },
+          openSubMenu(subMenu){
+            if(subMenu === 'inventory'){
+              if(this.showInventory === true){
+                this.showInventory = false;
+              } else {
+                this.showSwap = false;
+                this.showInventory = true;
+              }
+            } else if(subMenu === 'swap'){
+              if(this.showSwap === true){
+                this.showSwap = false;
+              } else {
+                this.showInventory = false;
+                this.showSwap = true;
+              }
+            }
           },
           attack(playerAttacked){
+            this.showInventory = false;
             if(playerAttacked){
-              this.battleProgress.push(`You attacked the enemy!`);
+              let playerDamage = this.calculateDamage(this.playerMonster, this.enemy);
+              this.enemyCurrentHP -= playerDamage;
+              this.battleProgress.push(`You dealt ${playerDamage} damage to the enemy!`);
             } else {
               this.battleProgress.push(`The enemy attacked you!`);
             }
-            let playerDamage = this.calculateDamage(this.playerMonster, this.enemy);
-            this.enemyCurrentHP -= playerDamage;
-            this.battleProgress.push(`You dealt ${playerDamage} damage to the enemy!`);
             if(this.enemyCurrentHP <= 0){
               this.battleProgress.push(`You defeated the enemy!`);
-              this.$emit('endEncounter', this.enemy);
+              this.encounterEnded = true;
             } else {
               let enemyDamage = this.calculateDamage(this.enemy, this.playerMonster);
               this.playerMonster.currentHP -= enemyDamage;
               this.battleProgress.push(`The enemy dealt ${enemyDamage} damage to you!`);
               if(this.playerMonster.currentHP <= 0){
                 this.battleProgress.push(`You were defeated!`);
-                this.$emit('endEncounter');
+                this.encounterEnded = true;
               }
             }
+            this.trimBattleProgress();
             // this.commitPlayerMonsterHP(this.playerMonster);
           },
           calculateDamage(attacker, defender){
@@ -166,22 +207,35 @@
             return Math.floor(damage);
           },
           flee(){
+            this.showInventory = false;
             if(this.playerMonster.calculatedStats.speed > this.enemy.calculatedStats.speed){
               this.battleProgress.push(`You fled successfully!`);
-              this.$emit('endEncounter');
+              this.encounterEnded = true;
             } else {
               let randomModifier = Math.floor(Math.random() * 256);
               let fleeChance = Math.floor((this.playerMonster.calculatedStats.speed * 128) / this.enemy.calculatedStats.speed + 30 * this.fleeAttempts) % 256;
               if(fleeChance > randomModifier){
                 this.battleProgress.push(`You fled successfully!`);
-                this.$emit('endEncounter');
+                this.encounterEnded = true;
               } else {
                 this.battleProgress.push(`You couldn't flee!`);
                 this.fleeAttempts++;
+                this.attack(false);
               }
+              this.trimBattleProgress();
+            }
+          },
+          endEncounter(){
+            this.$store.commit('restoreMonsterHP');
+            this.$emit('endEncounter');
+          },
+          useItem(item){
+            if(item.id == 2 || item.id == 3 || item.id == 4){
+              this.capture(item);
             }
           },
           capture(conduit){
+            this.showInventory = false;
             let conduitMultiplier = 1;
             let randomNum = Math.floor(Math.random() * 256);
             if(conduit.id == 3){
@@ -192,10 +246,14 @@
             let successRate = Math.floor((this.enemy.maxHP * 255 / 4) / this.enemy.currentHP * conduitMultiplier);
             if(successRate > randomNum){
               this.battleProgress.push(`You captured the enemy!`);
-              this.$emit('endEncounter', this.enemy);
+              this.$store.commit('captureMonster', this.enemy);
+              this.encounterEnded = true;
             } else {
               this.battleProgress.push(`The enemy broke free!`);
+              this.attack(false);
             }
+            this.$store.commit('removeItemFromInventory', {id: conduit.id, quantity: 1});
+            this.trimBattleProgress();
           },
           generateGuid() {
               const s4 = () => {
@@ -204,14 +262,25 @@
                   .substring(1);
               };
               return s4() + s4() + "-" + s4() + "-" + s4() + "-" + s4() + "-" + s4() + s4() + s4();
-          }
+          },
+          convertToCamelCase(str) {
+                return str.split(/[^a-zA-Z0-9]/g).map((x, index) => {
+                    if (index === 0) return x.toLowerCase()
+                    return x.substr(0, 1).toUpperCase() + x.substr(1).toLowerCase()
+                }).join('')
+            },
+            trimBattleProgress(){
+              if(this.battleProgress.length > 10){
+                this.battleProgress.shift();
+              }
+            }
         },
         computed: {
           playerMonsters() {
             return this.$store.state.playerMonstersTeam;
           },
           playerInventory() {
-            return this.$store.state.playerItemInventory;
+            return this.$store.state.playerItemInventory.filter(item => item.id !== 0 && item.id !== 1);
           }
         },
         beforeMount(){

@@ -101,8 +101,8 @@
             },
             gatherResource(resource) {
                 let monsterEncounter = Math.random();
-                // 25% chance to enter huntMonsters function
-                if (monsterEncounter < 0.25) {
+                // 10% chance to enter huntMonsters function
+                if (monsterEncounter < 0.1) {
                     console.log("Hunting monsters");
                     this.huntMonsters();
                     return;

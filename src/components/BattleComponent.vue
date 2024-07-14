@@ -171,6 +171,8 @@
               this.battleProgress.push(`The enemy attacked you!`);
             }
             if(this.enemyCurrentHP <= 0){
+              let expGain = Math.floor((64 * this.enemy.level) / 7)
+              this.$store.commit('gainExperience', expGain);
               this.battleProgress.push(`You defeated the enemy!`);
               this.encounterEnded = true;
             } else {
@@ -245,6 +247,8 @@
             }
             let successRate = Math.floor((this.enemy.maxHP * 255 / 4) / this.enemy.currentHP * conduitMultiplier);
             if(successRate > randomNum){
+              let expGain = Math.floor((64 * this.enemy.level) / 7)
+              this.$store.commit('gainExperience', expGain);
               this.battleProgress.push(`You captured the enemy!`);
               if(this.$store.state.tutorialObjectives.includes("Capture a monster in the peaceful woods")){
                    this.$store.commit('completeTutorialObjective', "Capture a monster in the peaceful woods");

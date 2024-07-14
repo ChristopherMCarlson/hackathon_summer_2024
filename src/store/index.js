@@ -80,6 +80,19 @@ export default new Vuex.Store({
       } else {
         console.log('Item not found');
       }
+    },
+    gainExperience(state, exp) {
+      state.playerMonstersTeam.forEach(monster => {
+        monster.exp += exp;
+        if(monster.exp >= Math.floor((4 * Math.pow(monster.level, 3)) / 5)) {
+          monster.level++;
+          monster.calculatedStats.hp += Math.floor(monster.stats.HP * (1/50));
+          monster.calculatedStats.attack += Math.floor(monster.attack * 1.1);
+          monster.calculatedStats.defense += Math.floor(monster.defense * 1.1);
+          monster.maxHP = monster.calculatedStats.hp;
+          monster.currentHP = monster.maxHP;
+        }
+      });
     }
   },
   actions: {
@@ -109,6 +122,9 @@ export default new Vuex.Store({
     },
     removeItemFromInventory(store, item) {
       store.commit('removeItemFromInventory', item);
+    },
+    gainExperience(store, exp) {
+      store.commit('gainExperience', exp);
     }
   },
   modules: {
